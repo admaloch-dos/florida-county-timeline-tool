@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+        <title>Image project</title>
+
+        <!-- css links -->
+
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+                integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+                crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="files/bootstrap.min.css">
+        <link rel="stylesheet" href="files/bootstrap-select-css.min.css">
+        <link rel="stylesheet" href="files/all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- javascript -->
+        <script src="files/jquery-3.6.3.min.js"></script>
+
+        <script src="files/bootstrap.bundle.min.js"></script>
+        <script src="files/bootstrap-select-js.min.js"></script>
+        <script src="files/jquery.imagemapster.js"></script>
+        <script src="files/openseadragon.min.js"></script>
+
+        <!-- main js files -->
+        <script type="module" src="./js/activate-image-mapster.js"></script>
+        <script type="module" src="./js/script.js"></script>
+</head>
+
+<body>
+
+        <div class="container d-flex justify-content-center mb-5">
+                <div class="content-container mt-5  d-flex flex-column justify-content-center align-items-center">
+                        <!-- county row -->
+                        <div class="row  county-title-container d-flex justify-content-center align-items-center">
+
+                                <div id="prev-map-arrow"
+                                        class="map-arrows    d-none d-sm-flex flex-column justify-content-center align-items-center">
+                                        <div class=" map-arrow-text text-center">Previous </div>
+                                        <div class=" map-arrow-text text-center"> County</div>
+                                        <div class=" arrow-icon-container text-center">
+                                                <i class="fa fa-arrow-left prev-map-icon"></i>
+                                        </div>
+                                </div>
+
+
+                                <div class="county-search-wrapper col-6">
+                                        <div class=" county-title mb-3">
+                                                <h2 class="text-center">Search by county:</h2>
+                                        </div>
+                                        <div class=" county-input d-flex justify-content-center">
+                                                <select name="county-select" id="county-select" class="selectpicker"
+                                                        data-live-search="true"></select>
+                                        </div>
+                                </div>
+
+                                <div id="next-map-arrow "
+                                        class="map-arrows  d-none d-sm-flex flex-column justify-content-center align-items-center">
+
+                                        <div class=" map-arrow-text text-center">Next </div>
+                                        <div class=" map-arrow-text text-center">County</div>
+                                        <div class=" arrow-icon-container text-center">
+                                                <i class="fa fa-arrow-right next-map-icon"></i>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- interactive map row -->
+                        <div class="row  interactive-map-container   d-flex justify-content-center align-items-center">
+                                <div class="col-12 interactive-map text-center">
+                                        <figure class="figure content_figure" style="margin-top:60px">
+                                                <img id="wpa_clickmap"
+                                                        src="https://www.floridamemory.com/discover/historical_records/wpa_county_histories/wpa_map.png"
+                                                        usemap="#wpa_map" style="opacity: 0.5;">
+
+                                                <map id="wpa_map" name="wpa_map">
+                                                        <div id="old-county-info">
+                                                                <span id="old-county"></span>
+                                                        </div>
+                                                        <area class="items " county="escambia" shape="poly"
+                                                                coords="27,12,41,9,39,29,52,59,48,67,53,74,47,85,34,87,25,87,23,78,28,54,18,39,18,22"
+                                                                href="#" alt="Escambia ">
+
+                                                        <area county="okaloosa" shape="poly"
+                                                                coords="80,13,112,15,114,27,110,55,109,69,93,64,89,72,95,82,99,82,91,88,81,84,80,62,78,24"
+                                                                href="#" alt="Okaloosa ">
+
+                                                        <area county="walton" shape="poly"
+                                                                coords="114,14,135,14,132,31,143,42,145,65,136,76,137,96,123,89,111,88,108,82,126,75,125,68,110,69,113,47,115,34"
+                                                                href="#" alt="Walton ">
+
+                                                        <area county="holmes" shape="poly"
+                                                                coords="135,12,148,12,160,12,169,12,170,26,168,35,159,36,152,39,144,42,141,39,135,33,134,27"
+                                                                href="#" alt="Holmes ">
+
+                                                        <area county="bay" shape="poly"
+                                                                coords="140,73,145,67,174,56,174,69,180,83,174,91,163,88,151,80,151,83,156,92,153,100,138,94,139,78"
+                                                                href="#" alt="Bay ">
+
+                                                        <area county="jackson" shape="poly"
+                                                                coords="171,13,202,12,218,23,222,34,217,44,178,54,178,43,169,34,172,23,171,20"
+                                                                href="#" alt="Jackson ">
+
+                                                        <area county="calhoun" shape="poly"
+                                                                coords="178,57,201,50,215,47,209,61,201,70,197,77,196,83,184,83,179,69"
+                                                                href="#" alt="Calhoun ">
+
+                                                        <area county="liberty" shape="poly"
+                                                                coords="218,48,231,69,236,99,214,100,207,103,197,84,206,68"
+                                                                href="#" alt="Liberty ">
+
+                                                        <area county="gulf" shape="poly"
+                                                                coords="186,85,197,86,207,108,205,136,199,141,183,131,180,126,193,123,191,116,164,103,165,95,178,92,181,86"
+                                                                href="#" alt="Gulf">
+
+                                                        <area county="gadsden" shape="poly"
+                                                                coords="230,64,250,57,265,42,230,42,221,38,217,47,219,48"
+                                                               href="#" alt="Gadsden ">
+
+                                                        <area county="franklin" shape="poly"
+                                                                coords="206,104,236,99,264,108,244,122,216,135,207,139,207,134"
+                                                                href="#" alt="Franklin ">
+
+                                                        <area county="leon" shape="poly"
+                                                                coords="235,73,270,79,286,45,265,43,249,59,232,66"
+                                                                href="#" alt="Leon ">
+
+                                                        <area county="wakulla" shape="poly"
+                                                                coords="235,75,262,79,274,80,280,94,276,103,262,107,254,102,237,96"
+                                                                href="#" alt="Wakulla ">
+
+                                                        <area county="jefferson" shape="poly"
+                                                                coords="286,45,314,46,312,58,302,63,303,76,289,81,281,91,272,77"
+                                                                href="#" alt="Jefferson ">
+
+                                                        <area county="taylor" shape="poly"
+                                                                coords="276,105,299,116,306,130,316,135,332,114,329,93,323,78,299,77,286,86"
+                                                                href="#" alt="Taylor ">
+
+                                                        <area county="madison" shape="poly"
+                                                                coords="304,76,303,64,312,59,315,46,335,47,344,66,338,83,329,83,321,76"
+                                                                href="#" alt="Madison ">
+
+                                                        <area county="lafayette" shape="poly"
+                                                                coords="348,111,356,113,364,108,348,91,336,84,328,86,333,104,333,115"
+                                                                href="#" alt="Lafayette ">
+
+                                                        <area county="suwannee" shape="poly"
+                                                                coords="339,82,345,64,366,66,369,103,362,105,349,90"
+                                                                href="#" alt="Suwannee ">
+
+                                                        <area county="hamilton" shape="poly"
+                                                                coords="337,50,343,63,362,66,378,62,374,51,354,50"
+                                                                href="#" alt="Hamilton ">
+
+                                                        <area county="columbia" shape="poly"
+                                                                coords="379,50,390,49,393,67,396,83,386,91,389,105,379,113,373,104,371,86,368,68,379,63"
+                                                                href="#" alt="Columbia ">
+
+                                                        <area county="baker" shape="poly"
+                                                                coords="391,49,396,66,397,82,409,83,428,83,427,72,424,59,411,46"
+                                                                href="#" alt="Baker ">
+
+                                                        <area county="nassau" shape="poly"
+                                                                coords="423,56,427,62,435,55,456,52,473,51,472,33,461,26,448,23,440,26,427,32,429,49"
+                                                                href="#" alt="Nassau ">
+
+                                                        <area county="duval" shape="poly"
+                                                                coords="429,63,429,80,445,80,459,89,473,79,479,79,472,53,450,54,436,56"
+                                                                href="#" alt="Duval ">
+
+                                                        <area county="union" shape="poly"
+                                                                coords="397,83,412,84,403,100,398,106,390,107,388,92"
+                                                                href="#" alt="Union ">
+
+                                                        <area county="bradford" shape="poly"
+                                                                coords="399,106,423,119,423,84,411,85,407,95,405,101"
+                                                                href="#" alt="Bradford ">
+
+                                                        <area county="clay" shape="poly"
+                                                                coords="424,86,424,115,443,111,457,107,459,98,458,89,452,88,442,81,430,81"
+                                                                href="#" alt="Clay ">
+
+                                                        <area county="putnam" shape="poly"
+                                                                coords="458,108,422,119,426,141,443,140,457,157,462,169,464,154,470,151"
+                                                                href="#" alt="Putnam ">
+
+                                                        <area county="alachua" shape="poly"
+                                                                coords="420,121,406,110,394,108,385,111,381,115,382,126,379,132,389,139,395,144,405,142,423,142,425,138"
+                                                                href="#" alt="Alachua ">
+
+                                                        <area county="gilchrist" shape="poly"
+                                                                coords="369,105,381,115,379,126,378,132,360,132,361,124,356,115,364,111,363,104"
+                                                                href="#" alt="Gilchrist ">
+
+                                                        <area county="dixie" shape="poly"
+                                                                coords="318,132,332,165,342,165,349,145,358,133,352,113,334,116"
+                                                                href="#" alt="Dixie ">
+
+                                                        <area county="levy" shape="poly"
+                                                                coords="345,166,365,189,392,176,393,163,399,160,394,154,395,147,377,134,362,134,351,144"
+                                                                href="#" alt="Levy ">
+
+                                                        <area county="marion" shape="poly"
+                                                                coords="398,145,397,154,401,159,395,165,394,179,407,180,419,189,440,189,457,184,460,169,449,148,439,141"
+                                                                href="#" alt="Marion ">
+
+                                                        <area county="flagler" shape="poly"
+                                                                coords="467,129,473,128,481,125,496,125,502,152,487,158,475,157,471,152"
+                                                                href="#" alt="Flagler ">
+
+                                                        <area county="volusia" shape="poly"
+                                                                coords="468,154,466,166,482,187,500,189,512,211,531,202,501,154,483,161"
+                                                                href="#" alt="Volusia ">
+
+                                                        <area county="seminole" shape="poly"
+                                                                coords="499,191,508,210,487,213,483,206,472,204,470,194,479,195,480,188"
+                                                                href="#" alt="Seminole ">
+
+                                                        <area county="lake" shape="poly"
+                                                                coords="462,169,477,185,478,192,464,194,460,201,461,229,444,228,444,190,460,186,459,177"
+                                                                href="#" alt="Lake ">
+
+                                                        <area county="orange" shape="poly"
+                                                                coords="468,194,460,202,462,230,516,231,515,213,509,213,490,214,480,207,472,207"
+                                                                href="#" alt="Orange ">
+
+                                                        <area county="sumter" shape="poly"
+                                                                coords="417,189,442,189,443,230,431,234,428,227,425,222,424,214,417,206,418,196"
+                                                                href="#" alt="Sumter ">
+
+                                                        <area county="citrus" shape="poly"
+                                                                coords="392,177,406,180,417,188,418,204,375,211,367,189"
+                                                                href="#" alt="Citrus ">
+
+                                                        <area county="hernando" shape="poly"
+                                                                coords="375,212,375,229,393,227,409,228,423,222,421,212,413,205,391,209"
+                                                                href="#" alt="Hernando ">
+
+                                                        <area county="pinellas" shape="poly"
+                                                                coords="370,249,390,248,391,274,384,281,386,290,377,295,370,286,368,269"
+                                                                href="#" alt="Pinellas ">
+
+                                                        <area county="hillsborough" shape="poly"
+                                                                coords="428,243,432,287,404,289,402,277,392,272,392,248"
+                                                                href="#" alt="Hillsborough ">
+
+                                                        <area county="polk" shape="poly"
+                                                                coords="461,231,443,231,429,236,430,242,434,286,503,289,499,276,485,257,466,243,462,237"
+                                                                href="#" alt="Polk ">
+
+                                                        <area county="osceola" shape="poly"
+                                                                coords="514,233,464,231,465,238,488,258,503,273,505,289,522,290"
+                                                                href="#" alt="Osceola ">
+
+                                                        <area county="brevard" shape="poly"
+                                                                coords="516,213,535,203,545,214,553,233,559,255,565,274,521,275,518,241"
+                                                                href="#" alt="Brevard ">
+
+                                                        <area county="indian river" shape="poly"
+                                                                coords="523,278,523,290,529,291,529,298,570,299,565,276"
+                                                                href="#" alt="Indian River ">
+
+                                                        <area county="saint lucie" shape="poly"
+                                                                coords="567,302,580,329,537,334,537,300" href="#"
+                                                                alt="Saint Lucie ">
+
+                                                        <area county="martin" shape="poly"
+                                                                coords="543,335,542,345,548,355,586,353,583,339,578,331"
+                                                                href="#" alt="Martin">
+
+                                                        <area county="okeechobee" shape="poly"
+                                                                coords="525,293,525,301,535,302,535,331,524,333,500,301,504,293"
+                                                                href="#" alt="Okeechobee ">
+
+                                                        <area county="highlands" shape="poly"
+                                                                coords="500,292,477,290,479,348,486,347,487,341,494,340,494,335,518,336,525,333,497,303"
+                                                                href="#" alt="Highlands ">
+
+                                                        <area county="hardee" shape="poly"
+                                                                coords="473,290,477,322,435,321,434,289" href="#"
+                                                                alt="Hardee ">
+
+                                                        <area county="manatee" shape="poly"
+                                                                coords="431,288,432,326,411,326,408,321,386,321,378,312,387,303,403,290"
+                                                                href="#" alt="Manatee ">
+
+                                                        <area county="sarasota" shape="poly"
+                                                                coords="387,323,407,324,408,327,434,330,432,370,426,366,418,369,406,366,394,343"
+                                                                href="#" alt="Sarasota ">
+
+                                                        <area county="desoto" shape="poly"
+                                                                coords="435,323,436,348,477,348,476,324" href="#"
+                                                                alt="DeSoto ">
+
+                                                        <area county="charlotte" shape="poly"
+                                                                coords="434,349,434,370,479,370,476,349" href="#"
+                                                                alt="Charlotte ">
+
+                                                        <area county="glades" shape="poly"
+                                                                coords="517,337,517,347,509,348,512,357,519,369,481,369,478,349,488,350,489,343,496,343,497,337"
+                                                                href="#" alt="Glades ">
+
+                                                        <area county="lee" shape="poly"
+                                                                coords="430,392,447,386,441,402,447,409,469,407,469,398,476,400,479,395,477,371,432,371,426,384"
+                                                                href="#" alt="Lee ">
+
+                                                        <area county="hendry" shape="poly"
+                                                                coords="480,372,481,396,505,395,505,408,529,409,527,376,519,371"
+                                                                href="#" alt="Hendry ">
+
+                                                        <area county="palm beach" shape="poly"
+                                                                coords="586,356,593,394,592,409,531,410,531,375,541,370,542,364,546,356"
+                                                                href="#" alt="Palm Beach ">
+
+                                                        <area county="collier" shape="poly"
+                                                                coords="472,401,471,410,446,411,452,433,471,450,531,449,529,410,503,411,502,397,481,397,475,404"
+                                                                href="#" alt="Collier ">
+
+                                                        <area county="broward" shape="poly"
+                                                                coords="532,411,532,436,591,436,593,425,591,411"
+                                                                href="#" alt="Broward ">
+
+                                                        <area county="monroe" shape="poly"
+                                                                coords="467,451,531,451,531,508,523,515,506,511,500,496,496,490,496,473"
+                                                                href="#" alt="Monroe ">
+
+
+                                                        <area county="miami-dade" shape="poly"
+                                                                coords="533,437,589,436,590,462,581,479,557,504,546,507,532,509"
+                                                                href="#" alt="Miami-Dade ">
+                                                        <area shape="poly" county="santa rosa" alt=" Santa Rosa "
+                                                                coords="43,11,41,29,54,60,62,59,66,69,58,74,59,80,64,85,73,82,80,85,76,25,79,12,58,8"
+                                                                href="#">
+                                                        <area shape="poly" county="washington" alt=" Washington "
+                                                                coords="167,36,176,44,176,53,147,65,144,44,159,38"
+                                                                href="#">
+                                                        <area class="highlighted" shape="poly" county="Saint Johns"
+                                                                alt="Saint Johns "
+                                                                coords="481,82,476,81,461,90,461,100,459,108,467,127,482,124,495,124"
+                                                                href="#">
+                                                        <area shape="poly" county="pasco" alt=" Pasco "
+                                                                coords="375,230,373,247,399,247,428,242,429,233,423,224,413,229,400,230,391,228"
+                                                                href="#">
+                                                </map>
+                                        </figure>
+
+                                </div>
+
+
+                        </div>
+                        <!-- year search row -->
+                        <div id="year-container"
+                                class="row year-container  d-flex flex-column justify-content-center align-items-center">
+                                <div class=" year-title">
+                                        <h2 class="year-prompt text-center">Narrow by year:</h2>
+                                </div>
+                                <div class=" year-input d-flex justify-content-center align-items-center">
+                                        <form class="form-horizontal">
+                                                <input id="year-search" type="text" placeholder="All years"
+                                                        class="  form-control form-control-success " id="year-input">
+                                        </form>
+
+                                        <i id="year-search-popup" class="info-popup fa fa-info-circle"
+                                                data-container="body" data-toggle="popover" data-placement="top"
+                                                data-delay='{"show":"200"}'
+                                                data-content="Pick a year to see what the selected county looked like at the time. e.g. 1845.">
+                                        </i>
+
+
+                                </div>
+                                <button id="reset-results-btn" class="btn btn-outline-dark w-auto mt-2">Reset
+                                        Timeline</button>
+                        </div>
+                        <!-- time line and img map slider -->
+                        <div class="w-100 ">
+
+
+                                <!-- arrows -->
+                                <div class="year-arrows">
+                                        <div class="up-arrow d-flex justify-content-end">
+
+                                                <i id="nav-to-county" class="fa fa-arrow-up nav-arrows"></i>
+                                        </div>
+                                        <div class="up-arrow d-flex justify-content-end">
+                                                <i id="nav-to-map" class="fa fa-arrow-down nav-arrows"></i>
+                                        </div>
+                                </div>
+
+                                <!-- timeline -->
+
+                                <div
+                                        class=" col-12  county-timeline text-center d-flex flex-column justify-content-center">
+
+
+                                        <div
+                                                class="timeline-header-container d-flex justify-content-center align-items-center">
+                                                <h2 id="county-timeline-header"> </h2>
+
+                                                <i id="timeline-popup" class="info-popup fa fa-info-circle"
+                                                        data-container="body" data-toggle="popover"
+                                                        data-delay='{"show":"200"}' data-placement="top"
+                                                        data-content="Click a timeline item to view a map from that era. Note: The earliest map dates back to the year 1820.">
+                                                </i>
+                                        </div>
+
+                                        <ul id="county-timeline-list"></ul>
+
+
+                                </div>
+
+                                <!-- image carousel and slider thumbnails -->
+                                <div class="map-info-nav d-flex justify-content-end align-items-center  ">
+
+                                        <i id="map-info-popup" class="info-popup fa fa-info-circle"
+                                                data-container="body" data-toggle="popover" data-delay='{"show":"200"}'
+                                                data-placement="top"
+                                                data-content="1936 Works Progress Administration map depicting changes to Florida's counties over time.">
+                                        </i>
+                                        <div>
+                                                <i id="nav-to-search" class="fa fa-arrow-up nav-arrows"></i>
+                                        </div>
+                                </div>
+
+                                <!-- open sea dragon -->
+                                <div class=" w-100  d-flex justify-content-center ">
+                                        <div class="map-sizing ">
+                                                <div class="main-map  " id="openseadragon1"></div>
+                                        </div>
+
+                                </div>
+
+
+                                <div class="  w-100  mt-3 d-none d-sm-block mb-5">
+                                        <div class="d-flex thumb-content  justify-content-center align-items-center">
+                                                <div id="prev-thumb-arrow"
+                                                        class="thumb-arrows col-1 d-flex justify-content-center align-items-center">
+                                                        <i class="fa fa-arrow-left thumb-icons prev-thumb-icon"></i>
+                                                </div>
+                                                <div id="thumb-img-container"
+                                                        class="thumb-img-container col-10 d-flex justify-content-around align-items-center">
+
+                                                </div>
+                                                <div id="next-thumb-arrow"
+                                                        class="thumb-arrows col-1 d-flex justify-content-center align-items-center">
+                                                        <i class="fa fa-arrow-right thumb-icons next-thumb-icon"></i>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div> <!--end content container-->
+        </div> <!--end main container-->
+
+
+</body>
+
+</html>

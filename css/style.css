@@ -1,0 +1,450 @@
+html {
+    font-size: .7em;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.content-container {
+    width: 100%;
+    border: black solid 1px;
+
+}
+
+.row {
+    width: 100%;
+}
+
+
+
+.county-title-container {
+    border-bottom: black solid 1px;
+    padding: 20px 0;
+}
+
+.county-timeline {
+    padding-top: 45%;
+    padding-bottom: 3%;
+    border-top: black solid 2px;
+}
+
+
+
+.timeline-box {
+    padding: 80px 0;
+    -webkit-box-shadow: 0px 0px 44px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 44px 2px rgba(0, 0, 0, 0.12);
+}
+
+#year-search-popup,
+#timeline-popup {
+    margin-left: .5em;
+}
+
+#county-timeline-list {
+    list-style-type: none
+}
+
+.map-arrows {
+    cursor: pointer;
+
+    padding: 15px 60px;
+    transition: all .3s ease-in-out;
+    border: white solid 2px;
+    width: 65px;
+}
+
+.map-arrows:hover {
+    border: black solid 2px;
+    background-color: lightgrey;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.form-control-success:focus {
+    border-color: #bde0fe;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(189, 224, 254, 0.47);
+    box-shadow: 0px 0px 15px 3px rgba(189, 224, 254, 0.47);
+}
+
+.form-control-warning:focus {
+    border-color: #D90429;
+
+    box-shadow: 0px 0px 15px 3px rgba(217, 4, 41, 0.47);
+}
+
+.map-sizing {
+    width: 100%;
+    /* margin-bottom: 4em; */
+    border: black solid 2px;
+}
+
+
+
+.main-map {
+    width: 100%;
+    aspect-ratio: 23/17;
+    -webkit-box-shadow: 0px 0px 58px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 58px 2px rgba(0, 0, 0, 0.15);
+}
+
+#map-info-popup {
+    position: relative;
+}
+
+#citation-popup {
+    margin-left: 10px;
+}
+
+
+
+.thumb-content {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.thumb-arrows {
+    width: 66px;
+    min-width: 20px;
+}
+
+
+
+.carousel-container {
+    width: 52%;
+    height: 79%;
+}
+
+.thumb-map-img {
+    opacity: .5;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    aspect-ratio: 12/13;
+    transition: opacity 350ms ease-in-out;
+    background-image: url("https://www.floridamemory.com/FMP/maps/small/fmc0001.jpg");
+}
+
+.thumb-map-img:hover {
+    opacity: 1;
+}
+
+.active-img {
+    opacity: 1;
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 58px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 58px 2px rgba(0, 0, 0, 0.15);
+}
+
+.thumb-text {
+    position: relative;
+    text-align: center;
+    opacity: .3;
+    color: black;
+    background-color: #dad7cd;
+    pointer-events: none;
+}
+
+.slider-img {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity .3s ease-in-out;
+}
+
+.slider-img:hover {
+    opacity: 1;
+}
+
+.prev-thumb-icon,
+.next-thumb-icon {
+    opacity: .5;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.prev-thumb-icon:hover,
+.next-thumb-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.map-1 {
+    background-position: 4% 4%
+}
+
+.map-2 {
+    background-position: 20% 4%
+}
+
+.map-3 {
+    background-position: 35% 4%
+}
+
+.map-4 {
+    background-position: 50% 4%
+}
+
+.map-5 {
+    background-position: 66% 4%
+}
+
+.map-6 {
+    background-position: 81% 4%
+}
+
+.map-7 {
+    background-position: 96% 4%
+}
+
+.map-8 {
+    background-position: 4.5% 33%
+}
+
+.map-9 {
+    background-position: 20% 33%
+}
+
+.map-10 {
+    background-position: 35% 32%
+}
+
+.map-11 {
+    background-position: 50.5% 32%
+}
+
+.map-12 {
+    background-position: 66% 32%
+}
+
+.map-13 {
+    background-position: 81.5% 32%
+}
+
+.map-14 {
+    background-position: 97% 31.5%
+}
+
+.map-15 {
+    background-position: 4.5% 61.5%
+}
+
+.map-16 {
+    background-position: 19.5% 61%
+}
+
+.map-17 {
+    background-position: 35% 61%
+}
+
+.map-18 {
+    background-position: 50.5% 60%
+}
+
+.map-19 {
+    background-position: 66% 59%
+}
+
+.map-20 {
+    background-position: 81.5% 59%
+}
+
+.map-21 {
+    background-position: 97.5% 59%
+}
+
+.nav-arrows {
+    font-size: 15px;
+    padding: 5px 5px;
+    /* border-radius: 50%; */
+    transition: all 300ms ease-in-out;
+    z-index: 100;
+}
+
+.nav-arrows:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.year-arrows {
+    position: relative;
+    top: 27px;
+}
+
+.interactive-map-container {
+    margin-bottom: -13em
+}
+
+#old-county-info {
+    max-width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+   
+}
+
+.year-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 50px 0px;
+    z-index: 100;
+    background-color: white;
+    top: 150px;
+    -webkit-box-shadow: 0px 0px 44px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 44px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+}
+
+.delete-icon,
+.delete-icon:hover {
+    opacity: 0;
+    cursor: default;
+}
+
+.make-clickable:hover {
+    cursor: pointer;
+    color: lightgray;
+}
+
+.popover-body {
+    max-height: 200px;
+    max-width: 100px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+
+/* media queries */
+@media (min-width: 400px) {
+
+    .year-container {
+        top: 175px;
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@media (min-width: 451px) {
+    html {
+        font-size: .8em;
+    }
+
+    .year-container {
+        top: 200px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .interactive-map-container {
+        margin-bottom: -15em
+    }
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: .9em;
+    }
+
+    .nav-arrows {
+        font-size: 30px;
+        padding: 5px 5px;
+    }
+
+    .year-arrows {
+        top: 41px;
+    }
+
+    .year-container {
+        top: 260px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .interactive-map-container {
+        margin-bottom: -18em
+    }
+
+    .popover-body {
+        max-width: 150px;
+    }
+
+    .map-sizing {
+
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1em;
+    }
+
+    .year-container {
+        top: 285px;
+        width: 400px;
+        height: 400px;
+    }
+
+    #map-info-popup {
+        right: 3em;
+    }
+
+    .map-sizing {
+        width: 75%;
+
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 1.2em;
+    }
+
+    .county-timeline {
+        padding-top: 35%;
+        padding-bottom: 10%;
+    }
+
+    .interactive-map-container {
+        margin-bottom: -12em
+    }
+
+    .popover-body {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 1.5em;
+    }
+
+    .year-container {
+        top: 355px;
+        width: 550px;
+        height: 550px;
+    }
+
+    .thumb-content {
+        width: 85%
+    }
+
+    #map-info-popup {
+        right: 5em;
+    }
+
+    .interactive-map-container {
+        margin-bottom: -15em
+    }
+}
