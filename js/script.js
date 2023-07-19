@@ -35,11 +35,19 @@ window.onload = function () {
     });
 }
 
-// loop to create items in the search by county select
+
+// create array of county ids in alphabetical order
+let countyNameArray = []
 for (let i = 0; i < counties.length; i++) {
+    countyNameArray.push(counties[i].id)
+    countyNameArray.sort()
+}
+
+// loop over alphabetical array to create items in the search by county select
+for (let i = 0; i < countyNameArray.length; i++) {
     const countySelectOption = document.createElement('option')
-    countySelectOption.innerText = counties[i].id
-    countySelectOption.value = counties[i].id
+    countySelectOption.innerText = countyNameArray[i]
+    countySelectOption.value = countyNameArray[i]
     countySelect.append(countySelectOption)
 }
 
@@ -61,7 +69,7 @@ document.querySelectorAll('area').forEach(county => {
         reset()
         data.county = countySelect.value
         updateHighlightedCounty(data.county)
-        scrollFunc('#year-container', 700)
+        // scrollFunc('#year-container', 700)
     })
 })
 

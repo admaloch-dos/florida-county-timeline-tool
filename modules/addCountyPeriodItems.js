@@ -80,6 +80,13 @@ const listItemClickHandler = () => {
     if (listItems.length > 1) {
         listItems.forEach(listItem => {
             if (parseInt(listItem.id) >= 1820 || listItem.id.toLowerCase() === 'today') {
+
+                const mapIconContainer = document.createElement('div')
+                mapIconContainer.innerHTML = `
+                    <i id="map-popup" class="map-popup fa-sharp fa-regular fa-map">&nbsp</i>
+                    `
+                const parentElement = listItem.parentElement
+                listItem.prepend(mapIconContainer)
                 listItem.classList.add('make-clickable')
                 listItem.addEventListener('click', () => {
                     let newYearStr = listItem.innerText.slice(0, 4)

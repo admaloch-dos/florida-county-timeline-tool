@@ -51,25 +51,35 @@ export const updateHighlightedCounty = (county) => {
 }
 
 
+// change imagemapster based on screen size
+const testScreenSize = () => {
+    let updatedMapsterSize = 200
+    if (window.innerWidth > 0 && window.innerWidth < 400) {
+        updatedMapsterSize = 275
+    } if (window.innerWidth > 399 && window.innerWidth < 576) {
+        updatedMapsterSize = 300
+    } if (window.innerWidth > 575 && window.innerWidth < 768) {
+        updatedMapsterSize = 450
+    } if (window.innerWidth > 767 && window.innerWidth < 1200) {
+        updatedMapsterSize = 600
+    } if (window.innerWidth > 1199) {
+        updatedMapsterSize = 700
+    }
 
-
-const resize300 = () => { if ($(window).width() > 250) $('img').mapster('resize', 250, null) }
-const resize400 = () => { if ($(window).width() > 400) $('img').mapster('resize', 350, null) }
-const resize576 = () => { if ($(window).width() > 576) $('img').mapster('resize', 450, null) }
-const resize768 = () => { if ($(window).width() > 768) $('img').mapster('resize', 600, null) }
-const resize1200 = () => { if ($(window).width() > 1200) $('img').mapster('resize', 850, null) }
-
-$(window).on("resize", resize300);
-$(window).on("resize", resize400);
-$(window).on("resize", resize576);
-$(window).on("resize", resize768);
-$(window).on("resize", resize1200);
-
-resize300()
-resize400()
-resize576()
-resize768()
-resize1200()
-
-
-
+    return updatedMapsterSize
+}
+// on page load
+let mapsterSize = testScreenSize()
+$('img').mapster('resize', mapsterSize, null)
+window.onresize = function () {
+    setTimeout(function () {
+        let prevSize = mapsterSize
+        mapsterSize = testScreenSize()
+        // window.location.reload(); //this function will play after 5000 milliseconds
+        if (mapsterSize !== prevSize) {
+            console.log('trigger resize')
+            $('img').mapster('resize', mapsterSize, null)
+            prevSize = mapsterSize
+        }
+    }, 1000);
+}
