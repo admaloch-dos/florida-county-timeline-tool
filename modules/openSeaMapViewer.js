@@ -1,7 +1,7 @@
 import { mapCoords } from "./mapData.js";
 
 
-// initialize open sea dragon  map 
+// initialize open sea dragon  map
 var viewer = OpenSeadragon({
     id: "openseadragon1",
     showNavigator: true,
@@ -37,7 +37,7 @@ const mainOpenSeaDragon = document.querySelector('.openseadragon-container')
 // open sea dragon function to change map zoom cords based on 'narrow by year' input
 export const openSeaViewerFunc = (yearIndex) => {
 
-    mainOpenSeaDragon.style.display = 'none'
+    // $(".openseadragon-container").hide()
     var tiledImage = viewer.world.getItemAt(0);
     let x = mapCoords[yearIndex].x
     let y = mapCoords[yearIndex].y
@@ -46,6 +46,6 @@ export const openSeaViewerFunc = (yearIndex) => {
     var imageRect = new OpenSeadragon.Rect(x, y, w, h);
     var viewportRect = tiledImage.imageToViewportRectangle(imageRect);
     viewer.viewport.fitBounds(viewportRect, true);
-    $(".openseadragon-container").fadeIn(1700);
+    // $(".openseadragon-container").fadeIn(1000);
 }
 

@@ -17,7 +17,7 @@ const yearInput = document.querySelector('#year-search')
 
 
 
-// add items to ul timeline
+// add items to ul timeline... ex. Alachua County Timeline 1783 etc...
 export const addCountyPeriodItems = () => {
     countyTimeline.style.display = 'none'
     countyTimelineHeader.innerText = `${countySelect.value} county timeline:`
@@ -63,7 +63,7 @@ export const addCountyPeriodItems = () => {
         }
     }
     listItemClickHandler()
-    $(".county-timeline").fadeIn(1000);
+    $(".county-timeline").show()
 }
 
 export const updateCountyTimeline = (id) => {

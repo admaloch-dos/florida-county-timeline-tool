@@ -17,17 +17,9 @@
         <link rel="stylesheet" href="files/bootstrap-select-css.min.css">
         <link rel="stylesheet" href="files/all.min.css">
         <link rel="stylesheet" href="./css/style.css">
-        <!-- javascript -->
-        <script src="files/jquery-3.6.3.min.js"></script>
 
-        <script src="files/bootstrap.bundle.min.js"></script>
-        <script src="files/bootstrap-select-js.min.js"></script>
-        <script src="files/jquery.imagemapster.js"></script>
-        <script src="files/openseadragon.min.js"></script>
 
-        <!-- main js files -->
-        <script type="module" src="./js/activate-image-mapster.js"></script>
-        <script type="module" src="./js/script.js"></script>
+
 </head>
 
 <body>
@@ -71,7 +63,7 @@
                         <!-- interactive map row -->
                         <div class="row  interactive-map-container   d-flex justify-content-center align-items-center">
                                 <div class="col-12 interactive-map text-center">
-                                        <figure class="figure content_figure" >
+                                        <figure class="figure content_figure">
                                                 <img id="wpa_clickmap"
                                                         src="https://www.floridamemory.com/discover/historical_records/wpa_county_histories/wpa_map.png"
                                                         usemap="#wpa_map" style="opacity: 0.5;">
@@ -118,7 +110,7 @@
 
                                                         <area county="gadsden" shape="poly"
                                                                 coords="230,64,250,57,265,42,230,42,221,38,217,47,219,48"
-                                                               href="#" alt="Gadsden ">
+                                                                href="#" alt="Gadsden ">
 
                                                         <area county="franklin" shape="poly"
                                                                 coords="206,104,236,99,264,108,244,122,216,135,207,139,207,134"
@@ -338,8 +330,7 @@
                                                         <area shape="poly" county="washington" alt=" Washington "
                                                                 coords="167,36,176,44,176,53,147,65,144,44,159,38"
                                                                 href="#">
-                                                        <area  shape="poly" county="Saint Johns"
-                                                                alt="Saint Johns "
+                                                        <area shape="poly" county="Saint Johns" alt="Saint Johns "
                                                                 coords="481,82,476,81,461,90,461,100,459,108,467,127,482,124,495,124"
                                                                 href="#">
                                                         <area shape="poly" county="pasco" alt=" Pasco "
@@ -437,7 +428,7 @@
                                 <div class="  w-100  mt-3 d-none d-sm-block mb-5">
                                         <div class="d-flex thumb-content  justify-content-center align-items-center">
                                                 <div id="prev-thumb-arrow"
-                                                        class="thumb-arrows col-1 d-flex justify-content-center align-items-center">
+                                                        class="thumb-arrows active-arrows col-1 d-flex justify-content-center align-items-center">
                                                         <i class="fa fa-arrow-left thumb-icons prev-thumb-icon"></i>
                                                 </div>
                                                 <div id="thumb-img-container"
@@ -445,7 +436,7 @@
 
                                                 </div>
                                                 <div id="next-thumb-arrow"
-                                                        class="thumb-arrows col-1 d-flex justify-content-center align-items-center">
+                                                        class="thumb-arrows active-arrows col-1 d-flex justify-content-center align-items-center">
                                                         <i class="fa fa-arrow-right thumb-icons next-thumb-icon"></i>
                                                 </div>
                                         </div>
@@ -453,6 +444,20 @@
                         </div>
                 </div> <!--end content container-->
         </div> <!--end main container-->
+
+
+        <!-- javascript -->
+        <script src="files/jquery-3.6.3.min.js"></script>
+
+        <script src="files/bootstrap.bundle.min.js"></script>
+        <script src="files/bootstrap-select-js.min.js"></script>
+        <script src="files/jquery.imagemapster.js"></script>
+        <script src="files/openseadragon.min.js"></script>
+
+        <!-- main js files -->
+
+        <script type="module" src="./js/activate-image-mapster.js"></script>
+        <script type="module" src="./js/script.js"></script>
 
 
 </body>

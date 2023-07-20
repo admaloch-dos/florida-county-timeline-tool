@@ -25,16 +25,26 @@ window.addEventListener('scroll', function () {
 
 
 
+// let infoPopups = document.querySelectorAll('.info-popup')
+// infoPopups.forEach(popup => {
+//     popup.addEventListener('click', () => {
+//         $('.popover').hide();
+//         $(this).popover('show');
+//     })
+// })
+
+
 // hide popover when screen clicked
 window.onload = function () {
     document.addEventListener("click", function (event) {
         // if the clicked element isn't child of the navbar, you must close it if is open
         if (!event.target.closest("[data-toggle='popover']")) {
             $("[data-toggle='popover']").popover('hide');
+
         }
     });
-}
 
+}
 
 // create array of county ids in alphabetical order
 let countyNameArray = []
@@ -74,17 +84,25 @@ document.querySelectorAll('area').forEach(county => {
 })
 
 // county next/prev arrow listener - image mapster 'html mapped' florida map - arrows event listener - change county to next/prev select item
+countySelect.value === 'Alachua' ? $( "#prev-map-arrow" ).addClass( "disabled" ) : $( "#prev-map-arrow" ).removeClass( "disabled" )
 document.querySelectorAll('.map-arrows').forEach(arrow => {
     arrow.addEventListener('click', () => {
+
 
         arrow.id === 'prev-map-arrow'
             ? countySelect.selectedIndex--
             : countySelect.selectedIndex++
         !countySelect.value && countySelect.selectedIndex++
+
         data.county = countySelect.value
+
+
         $('.selectpicker').selectpicker('refresh')
+
         updateHighlightedCounty(data.county)
+
         reset()
+        countySelect.value === 'Alachua' ? $( "#prev-map-arrow" ).addClass( "disabled" ) : $( "#prev-map-arrow" ).removeClass( "disabled" )
         scrollFunc('#year-container', 700)
     })
 })
@@ -109,7 +127,7 @@ yearInput.addEventListener('keyup', function (e) {
     }
     let timeOutNum = 0
     if (data.year.length >= 1 && data.year.length <= 3) timeOutNum = 2500
-    else if (data.year.length === 4) timeOutNum = 1300
+    else if (data.year.length === 4) timeOutNum = 2000
     else if (data.year.length === 0) timeOutNum = 700
     else return
 
@@ -125,13 +143,12 @@ document.querySelector('#reset-results-btn').addEventListener('click', () => {
 })
 
 // map carousel thumbnail arrows- add next/prev set of maps on next/prev arrow click
-document.querySelectorAll('.thumb-arrows').forEach(arrow => {
+document.querySelectorAll('.active-arrows').forEach(arrow => {
 
     let clickDisabled = false;
     arrow.addEventListener('click', () => {
         // sets short delay on arrows to prevent excessive clicking thru
-        if (clickDisabled)
-            return;
+
         data.yearIndex = parseInt(document.querySelectorAll('.thumb-map-img')[0].id) - 1
         const thumbImages = document.querySelectorAll('.thumb-map-img')
         var container = document.getElementById("thumb-img-container");
@@ -156,7 +173,7 @@ document.querySelectorAll('.thumb-arrows').forEach(arrow => {
         openSeaViewerFunc(currActiveImg.id)
         let currId = document.querySelectorAll('.thumb-map-img')[0].id
         updateCountyTimeline(currId)
-        clickDisabled = true;
+
         setTimeout(function () { clickDisabled = false; }, 500);
     })
 })
@@ -173,7 +190,6 @@ document.querySelectorAll('.nav-arrows').forEach(arrow => {
         }
     })
 })
-
 
 
 // change map thumbnail on smaller screen
@@ -201,6 +217,8 @@ $(window).on('load resize', function () {
         }
     }, 300);
 });
+
+
 
 setTimeout(() => {
     openSeaViewerFunc(data.yearIndex)

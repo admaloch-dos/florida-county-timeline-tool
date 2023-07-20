@@ -7,3 +7,4 @@ export const scrollFunc = (location, time) => {
 
 
 }
+

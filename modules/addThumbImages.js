@@ -19,7 +19,7 @@ export const addThumbImages = (yearIndex) => {
         `
         thumbMapContainer.append(thumbContain)
     }
-    $(".thumb-img-container").fadeIn(1000);
+    $(".thumb-img-container").show()
 }
 
 
