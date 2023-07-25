@@ -23,7 +23,7 @@ body {
 
 .county-title-container {
     border-bottom: black solid 1px;
-    background-color: #e7ecef;
+    background-color: #d1d1d1;
     padding: 20px 0;
 }
 
@@ -97,6 +97,10 @@ ul {
 
 #map-info-popup {
     position: relative;
+}
+
+.map-popup {
+    color: #3863FF;
 }
 
 #citation-popup {
@@ -302,7 +306,7 @@ ul {
     height: 200px;
     padding: 50px 0px;
     z-index: 100;
-    background-color: #e7ecef;
+    background-color: #d1d1d1;
     top: 150px;
     /* -webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1); */
     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
@@ -327,13 +331,23 @@ ul {
     justify-content: center;
     cursor: pointer;
     color: #3863FF;
-
-    transition: color .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
-.make-clickable:hover {
 
-    color: #A03737;
+
+.map-popup {
+    color: #3863FF;
+    transition: all .2s ease-in-out;
+}
+
+.county-content-container:hover .make-clickable {
+    color: #A03737 !important;
     text-decoration: underline;
+}
+
+.county-content-container:hover .map-popup {
+    color: #A03737 !important;
+
 }
 
 .popover-body {
@@ -430,6 +444,11 @@ ul {
     }
 }
 
+.popover {
+    max-width: 100%;
+    /* Max Width of the popover (depending on the container!) */
+}
+
 @media (min-width: 992px) {
     html {
         font-size: 1.2em;
@@ -445,7 +464,7 @@ ul {
     }
 
     .popover-body {
-        max-width: 250px;
+        max-width: 550px;
     }
 }
 
@@ -475,8 +494,10 @@ ul {
 
 .disabled {
 
-    pointer-events: none; /* Disable an element interaction, so it will not respond any event */
-    color: #ccc; /* Gray out the text color to signify being disabled */
+    pointer-events: none;
+    /* Disable an element interaction, so it will not respond any event */
+    color: #ccc;
+    /* Gray out the text color to signify being disabled */
     /* margin-left: 10px; */
 
 }

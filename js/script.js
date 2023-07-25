@@ -35,16 +35,16 @@ window.addEventListener('scroll', function () {
 
 
 // hide popover when screen clicked
-window.onload = function () {
-    document.addEventListener("click", function (event) {
-        // if the clicked element isn't child of the navbar, you must close it if is open
-        if (!event.target.closest("[data-toggle='popover']")) {
-            $("[data-toggle='popover']").popover('hide');
+// window.onload = function () {
+//     document.addEventListener("click", function (event) {
+//         // if the clicked element isn't child of the navbar, you must close it if is open
+//         if (!event.target.closest("[data-toggle='popover']")) {
+//             $("[data-toggle='popover']").popover('hide');
 
-        }
-    });
+//         }
+//     });
 
-}
+// }
 
 // create array of county ids in alphabetical order
 let countyNameArray = []
@@ -79,7 +79,7 @@ document.querySelectorAll('area').forEach(county => {
         reset()
         data.county = countySelect.value
         updateHighlightedCounty(data.county)
-        // scrollFunc('#year-container', 700)
+        scrollFunc('#year-container', 700)
     })
 })
 

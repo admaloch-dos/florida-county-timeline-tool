@@ -29,7 +29,7 @@ export const addCountyPeriodItems = () => {
         let endDate = formatDate(currCounty.periods[i][1])
         let countyName = currCounty.periods[i][2]
         let countyListItem = document.createElement('div')
-        countyListItem.classList.add('d-flex', 'justify-content-center')
+        countyListItem.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'county-content-container')
         countyListItem.innerHTML = `
         <li class="county-list-item" id='${endDate}'>${begDate} - ${endDate} - ${countyName}</li>
         `
@@ -45,7 +45,7 @@ export const addCountyPeriodItems = () => {
                 const citationContainer = document.createElement('div')
                 citationContainer.innerHTML = `
                     <i id="citation-popup" class="info-popup fa fa-info-circle"
-                    data-container="body" data-delay='{"show":"200"}' data-toggle="popover" data-html="true" data-placement="top"
+                    data-container="body" data-delay='{"show":"200"}' data-trigger="hover" data-toggle="popover" data-html="true" data-placement="top"
                     data-content="${citation}">
                     </i>
                     `
@@ -80,13 +80,11 @@ const listItemClickHandler = () => {
     if (listItems.length > 1) {
         listItems.forEach(listItem => {
             if (parseInt(listItem.id) >= 1820 || listItem.id.toLowerCase() === 'today') {
+                const mapIconContainer = document.createElement('i')
+                mapIconContainer.id = 'mad-popup'
+                mapIconContainer.classList.add('map-popup', 'fa-sharp', 'fa-regular', 'fa-map')
 
-                const mapIconContainer = document.createElement('div')
-                mapIconContainer.innerHTML = `
-                    <i id="map-popup" class="map-popup fa-sharp fa-regular fa-map">&nbsp</i>
-                    `
-                const parentElement = listItem.parentElement
-                listItem.prepend(mapIconContainer)
+                listItem.parentNode.insertBefore(mapIconContainer, listItem);
                 listItem.classList.add('make-clickable')
                 listItem.addEventListener('click', () => {
                     let newYearStr = listItem.innerText.slice(0, 4)
