@@ -24,6 +24,28 @@ window.addEventListener('scroll', function () {
 });
 
 
+
+// let infoPopups = document.querySelectorAll('.info-popup')
+// infoPopups.forEach(popup => {
+//     popup.addEventListener('click', () => {
+//         $('.popover').hide();
+//         $(this).popover('show');
+//     })
+// })
+
+
+// hide popover when screen clicked
+// window.onload = function () {
+//     document.addEventListener("click", function (event) {
+//         // if the clicked element isn't child of the navbar, you must close it if is open
+//         if (!event.target.closest("[data-toggle='popover']")) {
+//             $("[data-toggle='popover']").popover('hide');
+
+//         }
+//     });
+
+// }
+
 // create array of county ids in alphabetical order
 let countyNameArray = []
 for (let i = 0; i < counties.length; i++) {
@@ -46,11 +68,13 @@ countySelect.addEventListener('change', () => {
     reset()
     scrollFunc('#year-container', 300)
     data.county === 'Alachua' ? $( "#prev-map-arrow" ).addClass( "disabled" ) : $( "#prev-map-arrow" ).removeClass( "disabled" )
+
 })
 
 // county map click event listener - image mapster 'html mapped' florida mpa - change county when clicked on the map itself
 document.querySelectorAll('area').forEach(county => {
     county.addEventListener('click', () => {
+
         data.county = county.alt.replace('County', '').trim()
         $("#old-county-info").fadeOut();
         $("#county-select").selectpicker('val', data.county)
@@ -59,6 +83,7 @@ document.querySelectorAll('area').forEach(county => {
         updateHighlightedCounty(data.county)
         scrollFunc('#year-container', 300)
         data.county === 'Alachua' ? $( "#prev-map-arrow" ).addClass( "disabled" ) : $( "#prev-map-arrow" ).removeClass( "disabled" )
+
     })
 })
 
@@ -107,7 +132,7 @@ yearInput.addEventListener('keyup', function (e) {
     let timeOutNum = 0
     if (data.year.length >= 1 && data.year.length <= 3) timeOutNum = 2500
     else if (data.year.length === 4) timeOutNum = 2000
-    else if (data.year.length === 0) timeOutNum = 700
+    else if (data.year.length === 0) timeOutNum = 300
     else return
 
     setTimeout(() => {

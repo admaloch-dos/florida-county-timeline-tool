@@ -32,7 +32,7 @@ var viewer = OpenSeadragon({
 });
 
 
-
+const mainOpenSeaDragon = document.querySelector('.openseadragon-container')
 
 // open sea dragon function to change map zoom cords based on 'narrow by year' input
 export const openSeaViewerFunc = (yearIndex) => {

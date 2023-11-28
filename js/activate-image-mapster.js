@@ -65,7 +65,7 @@ const testScreenSize = () => {
     }if (window.innerWidth > 999 && window.innerWidth < 1200) {
         updatedMapsterSize = 600
     } if (window.innerWidth > 1199) {
-        updatedMapsterSize = 600
+        updatedMapsterSize = 800
     }
 
     return updatedMapsterSize
