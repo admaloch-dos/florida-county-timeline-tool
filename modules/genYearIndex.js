@@ -13,11 +13,11 @@ export const genYearIndex = () => {
     let yearInputNumber = parseInt(data.year)
     if (yearInputNumber > 0 && yearInputNumber <= currentYear) {
         data.year = yearInputNumber
-        scrollFunc('#county-timeline-header', 700)
+        scrollFunc('#county-timeline-header', 300)
     } else {
         data.year = 0
     }
-    
+
     if (yearInputNumber >= 1820 && yearInputNumber <= currentYear) {
         for (let i = 0; i < mapDatesArr.length; i++) {
             if (yearInputNumber >= parseInt(mapDatesArr[i].slice(0, 4)))

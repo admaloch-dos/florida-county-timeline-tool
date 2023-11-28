@@ -8,7 +8,7 @@ var viewer = OpenSeadragon({
     // sequenceMode: true,
     // showReferenceStrip: true,
 
-    prefixUrl: "/openseadragon/images/",
+    prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@4.1/build/openseadragon/images/",
     tileSources: [{
         type: "legacy-image-pyramid",
         levels: [
@@ -32,7 +32,7 @@ var viewer = OpenSeadragon({
 });
 
 
-const mainOpenSeaDragon = document.querySelector('.openseadragon-container')
+
 
 // open sea dragon function to change map zoom cords based on 'narrow by year' input
 export const openSeaViewerFunc = (yearIndex) => {

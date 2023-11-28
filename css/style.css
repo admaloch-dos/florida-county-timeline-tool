@@ -9,8 +9,8 @@ body {
 
 .content-container {
     width: 100%;
-    border: black solid 5px;
-
+    border: black solid 4px;
+max-width: 1000px;
 }
 
 .row {
@@ -22,18 +22,27 @@ body {
 }
 
 .county-title-container {
-    border-bottom: black solid 1px;
-    background-color: #d1d1d1;
+    border-bottom: #DBDBDB solid 1px;
+    background-color: #F2F2F2;
     padding: 20px 0;
 }
 
 .county-timeline {
     padding-top: 36%;
     padding-bottom: 0;
-    border-top: black solid 5px;
+    border-top: black solid 3px;
 }
 
-
+.bootstrap-select {
+    min-width: 300px;
+    max-width: 300px;
+}
+.county-search-wrapper button {
+    background-color: #FFF;
+}
+.county-search-wrapper button:hover {
+    background-color: #d1d1d1;
+}
 
 .timeline-box {
     padding: 80px 0;
@@ -60,7 +69,7 @@ body {
 }
 
 .map-arrows:hover {
-    border: white solid 3px;
+    border: #DBDBDB solid 3px;
 
 }
 
@@ -82,8 +91,18 @@ ul {
 
 .map-sizing {
     width: 100%;
+    max-width: 550px;
+    margin: 0 1rem;
     /* margin-bottom: 4em; */
-    border: black solid 2px;
+    border: #D9D9D9 solid 2px;
+}
+
+@media (max-width: 576px) {
+    .map-sizing {
+
+        margin: 0 1rem 2rem 1rem;
+
+    }
 }
 
 
@@ -144,8 +163,8 @@ ul {
 .active-img {
     opacity: 1;
     transform: scale(1.1);
-    -webkit-box-shadow: 0px 0px 38px 2px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 38px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .thumb-text {
@@ -284,7 +303,7 @@ ul {
 
 .year-arrows {
     position: relative;
-    top: 27px;
+    top: 27.5px;
 }
 
 .interactive-map-container {
@@ -295,7 +314,7 @@ ul {
 #old-county-info {
     max-width: 30%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 20%;
 
 }
@@ -306,11 +325,16 @@ ul {
     height: 200px;
     padding: 50px 0px;
     z-index: 100;
-    background-color: #d1d1d1;
+    background-color: #F2F2F2;
     top: 150px;
+    transition: all .3s ease-in-out;
     /* -webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1); */
-    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1); */
     border-radius: 50%;
+}
+
+.year-container:hover {
+background-color: #d1d1d1;
 }
 
 .btn-outline-dark {
@@ -396,7 +420,7 @@ ul {
     }
 
     .year-arrows {
-        top: 41px;
+        top: 42.5px;
     }
 
     .year-container {
@@ -430,14 +454,14 @@ ul {
         height: 400px;
     }
 
-    #map-info-popup {
-        right: 3em;
-    }
+    /* #map-info-popup {
+        right: 2em;
+    } */
 
-    .map-sizing {
+    /* .map-sizing {
         width: 75%;
 
-    }
+    } */
 
     .interactive-map-container {
         margin-bottom: -30em
@@ -467,7 +491,24 @@ ul {
         max-width: 550px;
     }
 }
+@media (min-width: 1200px) {
 
+    .county-timeline {
+        padding-top: 30%;
+        padding-bottom: 0%;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+
+
+    #map-info-popup {
+        right: 7em;
+    }
+
+}
 @media (min-width: 1200px) {
     html {
         font-size: 1.5em;
@@ -484,7 +525,7 @@ ul {
     }
 
     #map-info-popup {
-        right: 5em;
+        right: 9em;
     }
 
     .interactive-map-container {

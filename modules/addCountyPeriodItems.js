@@ -105,7 +105,7 @@ const listItemClickHandler = () => {
                     changeActiveImg()
                     testMapCarouselArrow()
 
-                    scrollFunc('#openseadragon1', 700)
+                    scrollFunc('#openseadragon1', 300)
                 })
             }
         })
