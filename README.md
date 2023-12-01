@@ -12,5 +12,5 @@ The most challenging part of this project was figuring out a way to effectively 
 Status:
 The project is mostly finished and will be implemented on the Florida Memory website, but is awaiting completion while our historian finishes up some of the data used for the county timeline histories.
 
-<b>Note:</b><br> 
+<b>Note:</b><br/> 
 The Florida Department of State is very security focused and version control software is not allowed so you may not see a much of a detailed commit history for this project.
