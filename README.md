@@ -7,7 +7,7 @@ This is a Florida county history research tool, informally referred to as, "When
 --Javascript<br/>
 --ImageMapster(HTML image mapping plugin: <a>https://github.com/jamietre/ImageMapster</a>) <br/>
 --OpenSeaDragon(high resolution image viewer: <a>https://github.com/openseadragon/openseadragon</a>)<br/>
---HTML
+--HTML<br/>
 --CSS
 
 <b>Takeaways:</b><br/> 
