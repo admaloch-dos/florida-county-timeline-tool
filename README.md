@@ -9,6 +9,7 @@ This is a Florida county history research tool, informally referred to as, "When
 --OpenSeaDragon(high resolution image viewer: <a>https://github.com/openseadragon/openseadragon</a>)<br/>
 --HTML<br/>
 --CSS<br/>
+--PHP(Will be added to website in PHP file upon approval)<br/>
 
 <b>Takeaways:</b><br/> 
 The most challenging part of this project was figuring out a way to effectively bring together our set of maps, data and documents that don’t always overlap or directly correspond to each other in a logical way. The resulting tool allows a user to choose any modern county, view its entire timeline, and search by year to filter the timeline information and show a map of what the chosen county and the rest of Florida looked like at the time. 
