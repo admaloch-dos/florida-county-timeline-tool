@@ -34,6 +34,8 @@ image.mapster({
     }
 });
 
+// $('img').mapster('resize', 275, null)
+
 $('area.highlighted').mapster('set', true);
 
 // updates highlighted area on map based on change of county value
@@ -72,6 +74,8 @@ const testScreenSize = () => {
 }
 // on page load
 let mapsterSize = testScreenSize()
+console.log(mapsterSize, 'is mapster size on page load')
+console.log(window.innerWidth)
 $('img').mapster('resize', mapsterSize, null)
 window.onresize = function () {
     setTimeout(function () {
@@ -83,5 +87,16 @@ window.onresize = function () {
             $('img').mapster('resize', mapsterSize, null)
             prevSize = mapsterSize
         }
+        console.log(mapsterSize, 'is mapster size after resize')
     }, 1000);
 }
+
+setTimeout(()=>{
+    if(window.innerWidth < 500) {
+        console.log('less than 400')
+        $('img').mapster('resize', 275, null)
+    }
+},500)
+
+
+
