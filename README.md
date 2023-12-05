@@ -1,13 +1,13 @@
-# when-it-was-where
+# "When it was Where"
 
 <b>About this project:</b><br/>
-This is a Florida county history research tool, informally referred to as "When it was where," built to assist the State Archives of Florida reference room staff. Patrons often request information about the history and timeline of certain counties in Florida and need to sift through numerous old maps and documents to find what they are looking for. The goal was to combine our collection of maps and county database information into an interactive tool, streamlining the research process and saving valuable time for both patrons and archive staff.
+This is a Florida county history research tool, informally referred to as "When it was Where," built to assist the State Archives of Florida reference room staff. Patrons often request information about the history and timeline of certain counties in Florida and need to sift through numerous old maps and documents to find what they are looking for. The goal was to combine our collection of maps and county database information into an interactive tool, streamlining the research process and saving valuable time for both patrons and archive staff.
 
 
 <b>Technologies used:</b><br/>
 -- JavaScript<br/>
--- ImageMapster (HTML image mapping plugin: <a>https://github.com/jamietre/ImageMapster</a>)<br/>
--- OpenSeaDragon (high-resolution image viewer: <a>https://github.com/openseadragon/openseadragon</a>)<br/>
+-- <b><a href="https://github.com/jamietre/ImageMapster">ImageMapster</a></b> (HTML image mapping plugin)<br/>
+-- <b><a href="https://github.com/openseadragon/openseadragon">OpenSeaDragon</a></b> (high-resolution image viewer)<br/>
 -- HTML<br/>
 -- CSS<br/>
 -- PHP (Will be added to the website in a PHP file upon approval)<br/>
