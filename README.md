@@ -12,7 +12,7 @@ This is a Florida county history research tool, informally referred to as "When 
 -- CSS<br/>
 
 <b>Takeaways:</b><br/>
-The biggest challenge in this project was devising an effective method to integrate disparate maps, data, and documents that didn't always align logically. The resulting tool allows users to select any modern county, explore its complete timeline, and search by year to filter timeline information, revealing a map depicting how the chosen county and the rest of Florida appeared at that time. I also got the opportunity to explore some unique javascript plugins I had never had the opportunity to use before that ended up being valuable in an archival setting.
+The biggest challenge in this project was devising an effective method to integrate disparate maps, data, and documents that didn't always align logically. The resulting tool allows users to select any modern county, explore its timeline, and search by year to filter timeline information, revealing a map depicting how the chosen county and the rest of Florida appeared at that time. I also got the opportunity to explore some unique javascript plugins I had never had the opportunity to use before that ended up being valuable in an archival setting.
 
 <b>Current status:</b><br/>
 The project is mostly finished and will be implemented on the Florida Memory website, but is awaiting completion while our historian finishes up some of the data used for the county timeline histories.
