@@ -1,4 +1,4 @@
-# "When it was Where"
+# "Florida County research guide web page"
 
 <b>About this project:</b><br/>
 This is a Florida county history research tool, informally referred to as "When it was Where," built to assist the State Archives of Florida reference room staff. Patrons often request information about the history and timeline of certain counties in Florida and need to sift through numerous old maps and documents to find what they are looking for. The goal was to combine our collection of maps and county database information into an interactive tool, streamlining the research process and saving valuable time for both patrons and archive staff.
