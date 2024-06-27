@@ -12,7 +12,7 @@ export function grabCurrItemYear(currItem) {
 export function doesCountyExist() {
     const highlighted = document.querySelector('.highlighted')
     if (!highlighted) {
-
+console.log('nothing is highlighted')
             $("#old-county-info").fadeIn();
 
         const oldCountySpan = document.querySelector('#old-county')
@@ -24,6 +24,8 @@ export function doesCountyExist() {
 
         `
     } else {
+        console.log('something is highlighted')
+
         $("#old-county-info").fadeOut();
     }
 }

@@ -1,0 +1,931 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/************************** SCROLL TO TOP BUTTON *******************************/
+#Scroll_btn {
+  transform: translateY(180%);
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 5px 0;
+  border-radius: 50%;
+  text-align:center;
+  height:45px;
+  width: 45px;
+  font-size: 17px;
+     color: #1F4D5F;
+	 border: 4px solid #1F4D5F;
+ /* color: #9B7A58;
+  border: 4px solid #9B7A58;
+  box-shadow: 0 0 0 3px #bd5410;*/
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+  transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
+}
+#Scroll_btn:hover {
+  /*background-color: #8E3F0C;*/
+  box-shadow:none;
+}
+#Scroll_btn:hover i {
+	animation: mybounce 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease;
+	animation-duration: 2s;
+}
+
+@keyframes mybounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+}
+.show_btn{
+	transform: translateY(2%)!important;
+}
+
+/***************************** HEADER ****************************/
+#navContainer{
+	padding-right:0!important;
+  	padding-left:0!important;
+ 	background-color:#fff;
+	max-width: initial;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px
+}
+#main_navbar{
+	 /*background-color:#C1AC97;
+	 box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;*/
+    font-weight: 600;
+    padding: 0;
+}
+@media screen and (max-width:992px){
+	#main_navbar{
+		background-color:#fff;
+	}
+}
+#main_navbar .dropdown-menu.show{
+	margin-top:-1px!important;
+}
+@media screen and (min-width: 992px) {
+	#main_navbar .dropdown-menu.show{
+		box-shadow: 4px 5px 4px 3px rgba(0, 0, 0, 0.2)
+	}
+}
+#navContainer .navbar-toggler:focus{
+	outline:none!important;
+}
+#navContainer #header_contents{
+  padding-bottom: 0px;
+  padding-top: 0;
+}
+
+#navContainer .navbar .navbar-brand{
+	margin-top: -35px;
+}
+#navContainer .navbar .navbar-brand .highcontrast_logo{
+	display:none;
+}
+#navContainer .navbar .navbar-brand .highcontrast_logo{
+	display:none;
+}
+.highcontrast #navContainer .navbar .navbar-brand .highcontrast_logo{
+	display:block;
+}
+.highcontrast #navContainer .navbar .navbar-brand .default_logo{
+	display:none;
+}
+@media screen and (max-width:476px){
+	#navContainer .navbar .navbar-brand img{
+		width:250px;
+	}
+}
+@media screen and (max-device-width: 768px) and (orientation: landscape){
+	#navContainer #main_navbar{
+		padding-top:0;
+	}
+	#navContainer .navbar .navbar-brand img{
+		width:250px;
+	}
+}
+@media screen and (max-width:320px){
+	#navContainer .navbar .navbar-brand{
+		margin-bottom:0;
+	}
+}
+
+#navContainer .navbar-nav .show > .nav-link,
+#navContainer .navbar-nav a.nav-link:hover{
+	color:#c3c3c3;
+}
+#navContainer .navbar-nav a.nav-link:focus{
+	outline:none!important;
+	color:#c3c3c3;
+}
+#navContainer .nav-link:after{
+	content:none;
+	display:none;
+}
+
+#navContainer .navbar-nav a.nav-link{
+	color:#826e59;
+	font-size:12px;
+	letter-spacing: 3px;
+    text-transform: uppercase;
+	transition:color 0.5s;
+    font-weight: 900;
+
+}
+#navContainer .navbar .navbar-nav .nav-item#share ul.dropdown-menu li.dropdown-submenu a.dropdown-item{
+	    color: #2B454E;
+    text-shadow: none;
+    font-weight: normal;
+}
+@media screen and (max-width:992px){
+	#navContainer .navbar-nav a.nav-link{
+		padding:10px 0;
+	}
+	#Left_Nav{
+		margin-bottom:10px;
+	}
+	#Right_Nav{
+		margin-top:auto !important;
+	}
+}
+/* HIDES NAVBAR TOGGLER ON MOBILE, MOBILE NAV CAN BE FOUND IN COMMON FOLDER CALLED 'PushSideNav'
+@media screen and (max-width:992px){
+#navContainer .navbar-expand-lg .navbar-toggler{
+	display:none;
+}
+}
+*/
+
+
+      .alt-link-style:hover {
+        color: #FFFFFF !important;
+      }
+      #photo .alt-link-style:hover {
+        background-color: #663322!important;
+      }
+      #historical_records .alt-link-style:hover {
+        background-color: #557766!important;
+      }
+      #maps .alt-link-style:hover {
+        background-color: #423928!important;
+      }
+      #audio .alt-link-style:hover {
+        background-color: #B35C01!important;
+      }
+      #about_fm .alt-link-style:hover {
+        background-color: #4F7B99!important;
+      }
+      #classroom .alt-link-style:hover {
+        background-color: #4F7B99!important;
+      }
+      #exhibits .alt-link-style:hover {
+        background-color: #334454!important;
+      }
+      #guides .alt-link-style:hover {
+        background-color: #334454!important;
+      }
+
+
+
+
+@media screen and (min-width:992px){
+  #navContainer .navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navContainer .dropdown-submenu {
+    position:relative;
+  }
+  #navContainer .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    /* margin-top:-6px; */
+  }
+}
+
+.navbar-nav {
+    border-bottom: white solid 2px;
+}
+
+.dropdown-menu {
+    margin: 0;
+    border: none;
+}
+
+.firstLevel:hover{
+	background-color:#eee;
+}
+.firstLevel:hover > .dropdown-item{
+	color:#BD5410;
+}
+
+.firstLevel .dropdown-menu li > a:focus{
+	background-color:transparent;
+	color:#BD5410;
+}
+.firstLevel .dropdown-menu li > a:hover{
+	background-color:transparent;
+	color:#BD5410;
+}
+#navContainer .dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+#navContainer .dropdown-submenu a.dropdown-item.dropdown-toggle{
+	color:#2B454E;
+	text-shadow:none;
+	font-weight:normal;
+}
+#navContainer .dropdown-submenu a.dropdown-item{
+    font-size: 15px;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px 16px #8a8a8a;
+    font-weight: 700;
+}
+
+
+
+/* Search Form and Select Tag */
+.SearchForm {
+	    margin-bottom: 5px;
+	border: none !important;
+	border-radius:0.25rem;
+}
+
+.SearchForm .form-control:focus{
+	box-shadow:none;
+  border-color:#ced4da;
+}
+.SearchForm .input-group .input-group-append #submit_search{
+	border: 1px solid #ced4da;
+}
+.SearchForm .custom-select{
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+.SearchForm .custom-select:hover{
+  cursor:pointer;
+}
+.SearchForm .custom-select:focus{
+  box-shadow:none;
+  border-color:#ced4da;
+}
+.SearchForm .form-control::placeholder {
+    font-size:14px!important;
+}
+.SearchForm .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-size:14px!important;
+}
+.SearchForm .form-control::-ms-input-placeholder { /* Microsoft Edge */
+   font-size:14px!important;
+}
+.SearchForm .input-group-prepend .btn{
+	border-color:#ced4da;
+}
+.highcontrast .SearchForm .input-group .input-group-append #submit_search{
+	background-color:white;
+}
+.dropdown-item {
+    position: relative;
+    z-index: 10;
+}
+.dropdown-header.bottom{
+	font-size:10px!important;
+	margin-top:-30px!important;
+	font-weight:normal;
+	text-transform:none;
+	letter-spacing:1px;
+	font-style: italic;
+	color: white;
+	text-shadow:none;
+}
+.dropdown-header {
+    font-size: 14px!important;
+	text-transform: uppercase;
+    color: white !important;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px 16px #8a8a8a;
+}
+.mega.show{
+	left: 100%!important;
+	width: 450px;
+    height: 450px;
+}
+
+#historical_records li {
+    max-height:60px;
+}
+
+.mega{
+	width: 450px;
+    height: 450px;
+}
+@media screen and (min-width: 992px) {
+	.mega{
+		box-shadow: 4px 5px 4px 3px rgba(0, 0, 0, 0.2);
+	}
+}
+.mega ul{
+	list-style-type:none;
+	padding-left:0!important;
+	display:inline-block;
+}
+.navbar .dropdownImage{
+  height:auto;
+  max-width:100%;
+  border-radius: .25rem!important;
+  border:1px solid black;
+  margin: .25rem 1.5rem;
+}
+@media screen and (max-width: 992px){
+   img.dropdownImage{
+	 display:none!important;
+  }
+  .mega{
+  border:none;
+  border-top:1px solid rgba(0,0,0,.15)!important;
+  border-bottom:1px solid rgba(0,0,0,.15)!important;
+  border-radius:0!important;
+  height: 200px;
+  max-height: 200px;
+  width: auto !important;
+  overflow-x: hidden!important;
+  overflow:auto;
+  -webkit-overflow-scrolling:touch; /* mobile safari*/
+}
+/* width */
+.mega::-webkit-scrollbar {
+    width: 6px;
+}
+/* Track */
+.mega::-webkit-scrollbar-track {
+    background: #d3d3d3;
+}
+/* Handle */
+.mega::-webkit-scrollbar-thumb {
+    background: #bd5410;
+}
+/* Handle on hover */
+.mega::-webkit-scrollbar-thumb:hover {
+    background: #76350A;
+}
+
+.dropdown-menu.mega.show{
+	 border-radius:none!important;
+}
+
+#navContainer .navbar .navbar-brand{
+	margin-top:auto;
+	margin:0 auto 10px;
+}
+#menuHeader{
+	display:none;
+}
+}
+
+
+/********test(hover)  https://stackoverflow.com/questions/44467377/bootstrap-4-multilevel-dropdown-inside-navigation******/
+.dropdown-submenu{
+    position: relative;
+}
+@media screen and (min-width: 992px) {
+	.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    /*position: absolute !important;
+    margin-top: -30px;*/
+    left: 100%;
+	width: 450px;
+    height:450px;
+}}
+.nav-item > .dropdown-menu, .dropdown-menu.mega{
+	border-radius:0!important;
+}
+#menuTitle{
+	padding-left:23px;
+	text-transform: uppercase;
+	font-weight:600;
+	background-color: gainsboro;
+    padding: 10px 0 10px 10px;
+    margin: -13px auto 10px;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	letter-spacing:3px;
+    position: relative;
+}
+
+#menuTitle a{
+	color:white;
+}
+#menuTitle a:hover{
+	color:white!important;
+}
+.menuDivider{
+	margin-top:5px!important;
+	margin-bottom:5px!important;
+}
+
+@media screen and (max-width: 992px) {
+	#settings_dropdown {
+		display:none!important;
+}
+}
+#Right_Nav {
+	margin-top: -10px;
+	display:inherit;
+}
+#Right_Nav li > a{
+	color:#826e59;
+	letter-spacing: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+	padding: .5rem .6rem;
+	transition:color 0.5s;
+}
+
+#header_links_container{
+	margin-bottom: -10px;
+	border-top: #457385 2px solid;
+}
+#header_links_container ul{
+	height: 35px;
+}
+#header_links_container ul li{
+	    background-color: #457385;
+
+}
+#header_links_container ul li > a{
+	color: white!important;
+    padding: 0px 10px 2px;
+	text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+	font-family: 'Roboto', sans-serif;
+}
+.DyslexicFont #header_links_container ul li > a{
+	font-family: 'OpenDyslexicRegular', sans-serif;
+}
+#header_links_container ul li.radio_program{
+	background-color:transparent;
+	margin-top:3px;
+}
+#header_links_container ul li.radio_program a{
+	color:black!important;
+	font-size:11px
+}
+#header_links_container ul li.radio_program a img{
+	margin-right:6px;
+}
+#header_links_container ul li#AffilatedSites_btn {
+    background-color: #d2f0f8;
+    border: 2px solid #457385;
+    border-top: none;
+    margin-top: -2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*#header_links_container ul li#AffilatedSites_btn img {
+    -webkit-filter: drop-shadow(-4px 2px 2px #626262);
+    filter: drop-shadow(-4px 2px 2px #626262);
+}*/
+
+
+
+
+/*********** MEGA MENU BACKGROUND ************/
+#photo .mega{
+	background-image: linear-gradient(90deg, #1A0D09, rgba(0,0,0,0.1)),url(https://www.floridamemory.com/themes/florida_memory/images/photo_thumb.jpg);
+    background-repeat: no-repeat;
+    background-size: 123%;
+    background-position: 0% 6%;
+}
+#historical_records .mega{
+	background-image: linear-gradient(90deg, #202D26, rgba(0,0,0,0.3)),url(https://www.floridamemory.com/themes/florida_memory/images/hs_thumb.jpg);
+    background-repeat: no-repeat;
+    background-size: 103% 129%;
+    background-position: center -14%;;
+}
+#maps .mega{
+	background-image: linear-gradient(90deg, #211C14, rgba(0,0,0,0.1)),url(https://www.floridamemory.com/themes/florida_memory/images/maps_thumb.png);
+    background-repeat: no-repeat;
+    background-size: 147%;
+    background-position: center 50%;
+}
+#audio .mega{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(https://www.floridamemory.com/themes/florida_memory/images/audio_thumb.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 100%;
+}
+#video .mega{
+	background-image: linear-gradient(90deg, #000000, rgba(0,0,0,0.1)),url(https://www.floridamemory.com/themes/florida_memory/images/video_thumb.png);
+    background-repeat: no-repeat;
+    background-size: 171%;
+    background-position: 22% 100%;
+}
+#about_fm .mega{
+	background-image: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(https://www.floridamemory.com/themes/florida_memory/images/florida_memory_logoSquare.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: #5a262b;
+}
+#classroom .mega{
+    background-image: linear-gradient(90deg, #141F26, rgba(0,0,0,0.1)),url(https://www.floridamemory.com/themes/florida_memory/images/classroom_thumb.jpg);
+    background-repeat: no-repeat;
+    background-size: 133%;
+    background-position: 33% 29%;
+}
+#exhibits .mega{
+    background-image: linear-gradient(90deg, #0D1115, rgba(0,0,0,0.1)),url(https://www.floridamemory.com/learn/exhibits/wwii/images/flinwwii.png);
+    background-repeat: no-repeat;
+    background-size: 308%;
+    background-position: 100% 100%;
+}
+#guides .mega{
+    background-image: linear-gradient(90deg, #26333F, rgba(0,0,0,0.1)),url(https://www.floridamemory.com/fpc/memory/photographiccollection/photo_exhibits/images/women/pr12839_.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.backdrop {
+  background-color:rgba(0,0,0,0.5);
+   opacity: 0.5;
+   height: 100%;
+   left: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index:100;
+   display: none;
+}
+@media screen and (min-width:992px){
+.defaultNav{
+  top:0;
+  opacity:1;
+  display:block;
+  transition:top 0.5s, opacity 0.5s;
+}
+.navbar-hide{
+  top:-24%;
+  opacity:0;
+  display:none;
+}
+}
+.highcontrast #navContainer{
+	/*background-color:#181818;*/
+	background: rgb(0, 0, 0);
+}
+.highcontrast #Scroll_btn{
+	background: white;
+	color: black!important;
+	/*box-shadow: 0 0 0 3px #919191;*/
+	border-color: #7a7a7a;
+}
+.highcontrast .SearchForm{
+	border-color:transparent;
+}
+.highcontrast #header_links_container ul li {
+    background-color: #2C2C2C;
+}
+.highcontrast #navContainer .navbar-nav a.nav-link{
+	color:#fff!important;
+}
+.highcontrast #Right_Nav li > a{
+	color:#fff!important;
+}
+.highcontrast #settings_dropdown #accessibility > a{
+	color:#fff!important;
+}
+.highcontrast #header_links_container ul li.radio_program {
+    background-color: transparent!important;
+}
+.highcontrast #main_navbar {
+    background-color: #2C2C2C;
+}
+
+
+
+
+
+
+
+/********************************************* AFFILIATED SECTION *******************************/
+#AffilatedSites{
+  background-color: #d2f0f8;
+}
+
+#AffilatedSites .form-control {
+    border: 3px solid #457385;
+    height: auto;
+}
+#AffilatedSites .btn {
+    background-color: #457385;
+    font-size: 16px;
+}
+#AffilatedSites ul li a{
+  color:#000;
+  font-size: 15px;
+}
+.resourcesLink .container-fluid{
+	max-width: inherit;
+    padding: 0!important;
+}
+.resourcesLink{
+  padding:10px 0;
+}
+.resourcesLink .statement{
+	text-align:center;
+	font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    width: 60rem;
+    display: block;
+    margin: 0 auto 40px;
+}
+.resourcesLink .btn{
+	background-color:#000;
+	color: white;
+}
+.resourcesLink .states_section_title{
+	text-align:center;
+	font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.resourcesLink .state_sites{
+	padding:0 30px;
+	height: 8rem;
+}
+.resourcesLink .state_sites li{
+	margin-bottom:10px;
+}
+.resourcesLink .state_sites.first{
+	position:relative;
+}
+
+.resourcesLink .state_sites.middle::before,
+.resourcesLink .state_sites.last::before{
+	position:absolute;
+	content:'';
+	background-color: #5C8594;
+	height: 100%;
+	width: 2px;
+    left: 2px;
+    bottom: 0;
+    box-shadow: 2px 4px 6px #929292;
+}
+.resourcesLink .state_sites.middle{
+	position:relative;
+}
+.resourcesLink .state_sites.last{
+	position:relative;;
+}
+.AffilatedSites_btn{
+	position: relative;
+    left: 460px;
+  margin-bottom:10px;
+  margin-top:-8px;
+  background-color: #9B7A58;
+  color:white;
+  font-size: 13px!important;
+  text-transform:uppercase;
+  border-radius:0!important;
+}
+.AffilatedSites_btn:focus{
+  box-shadow:none!important;
+}
+#bottom_sites{
+	margin-bottom: 0;
+    border-top: #457385 1px solid;
+    padding: 10px 20px 0;
+    text-align: center;
+}
+#bottom_sites .list-inline-item+.list-inline-item::before{
+	display: inline-block;
+    padding-right: .5rem;
+    color: #457385;
+    content: "•";
+}
+.DLIS_Logo{
+	-webkit-filter: drop-shadow(-4px 2px 2px #626262);
+	filter: drop-shadow(-4px 2px 2px #626262);
+}
+.highcontrast #bottom_sites{
+	border-top-color:#fff;
+}
+.highcontrast #bottom_sites .list-inline-item a{
+	color:#fff;
+}
+.highcontrast .resourcesLink .state_sites li a{
+	color:#fff !important;
+}
+.highcontrast #bottom_sites .list-inline-item+.list-inline-item::before{
+	color:#fff;
+}
+.highcontrast .resourcesLink .state_sites.middle::before,
+.highcontrast .resourcesLink .state_sites.last::before{
+	background-color:#fff;
+	box-shadow:none;
+}
+.fontSizeMedium .resourcesLink .state_sites{
+	height: 10rem;
+}
+.fontSizeMedium #AffilatedSites ul li a{
+	font-size:17px;
+}
+.DyslexicFont .resourcesLink .state_sites{
+	height: 10rem;
+}
+.DyslexicFont.fontSizeMedium .resourcesLink .state_sites{
+	height: 15rem;
+}
+#ada_dropdown label{
+	cursor:pointer;
+	font-weight:normal;
+}
+#settings_dropdown{
+	background-color:transparent!important;
+}
+#accessibility > a::after{
+  display:none;
+}
+#settings_dropdown #accessibility > a{
+	color: #826e59;
+    font-size: 23px;
+	padding: 0px .5rem 3px;
+    margin-top: 13px;
+}
+#accessibility a.page_guideBtn{
+	color: #6c757d !important;
+}
+#accessibility .form-check{
+  padding:0px 10px;
+}
+
+#accessibility .dropdown-menu{
+	padding:10px;
+	width:300px;
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	left: auto!important;
+    right: 0px!important;
+    transform: none!important;
+    top: 100%!important;
+}
+#accessibility .dropdown-menu form{
+	border-bottom:1px solid gainsboro;
+}
+#accessibility .dropdown-menu form:last-child{
+	border-bottom:none;
+}
+#accessibility .dropdown-menu form .dropdown-header{
+	text-shadow: none;
+    color: #6c757d!important;
+    letter-spacing: unset;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 17px!important;
+}
+.page_guideBtn{
+	color:inherit!important;
+}
+
+#accessibility form{
+	margin-bottom:10px;
+}
+#accessibility .form-check-input{
+  cursor:pointer;
+  margin-top:7px;
+}
+#accessibility .form-check ul{
+  list-style:none;
+  margin-right:auto;
+  height:auto;
+  padding-left:35px;
+}
+#accessibility .form-check ul li{
+	background-color:white;
+	position:relative;
+}
+#accessibility .form-check ul li a{
+	letter-spacing:normal;
+	font-size:inherit;
+	padding:0;
+	transition:none;
+	text-transform:none;
+	color:#000;
+	font-weight:normal;
+	display:block;
+}
+#accessibility .form-check ul li a:hover{
+	/*text-decoration:none;*/
+}
+/*#accessibility .form-check ul li:before{
+    content: "\f10c";   this is your text. You can also use UTF-8 character codes as I do here
+    font-family: FontAwesome;
+    left:-20px;
+    position:absolute;
+    top:0;
+	font-weight: 100;
+}*/
+#accessibility .form-check ul li.active:before{
+    content: "\f192";
+    font-family: "FontAwesome";
+	position:absolute;
+	left:-25px;
+ }
+
+
+
+/* Font size toggle buttons*/
+#accessibility .fontSizeToggle{
+  margin-bottom:20px;
+}
+#accessibility .fontSizeToggle #font-size {
+  margin: 0 5px;
+}
+#accessibility .fontSizeToggle button {
+  width: 30px;
+  height: 30px;
+  line-height:1;
+}
+#accessibility .fontSizeToggle p {
+  display: inline-block;
+}
+#ada_dropdown label{
+    color: #000;
+}
+.textcontrols button{
+		vertical-align: bottom;
+	margin: 0 0.3125em;
+	padding: 0 0.3125em;
+	border: 1px solid #000;
+	background-color: #fff;
+	font-weight: bold;
+}
+.highcontrast #accessibility .dropdown-menu form .dropdown-header{
+	color:#FFF!important;
+}
+.highcontrast #accessibility .dropdown-menu.show {
+    background-color: #2C2C2C;
+    border: 2px solid black;
+}
+.highcontrast #accessibility .dropdown-header {
+    color: white!important;
+}
+.highcontrast #accessibility .form-check ul li{
+	background-color: #2C2C2C;
+}
+
+.highcontrast #settings_dropdown #accessibility > a {
+    color: #fff!important;
+}
+.highcontrast #accessibility a.page_guideBtn{
+    color: #fff!important;
+}
+.highcontrast #header_links_container ul li.radio_program a,
+.highcontrast #accessibility .settings_icon{
+	color:white!important;
+	font-weight:600;
+}
+.highcontrast #AffilatedSites{
+	background-color: #2C2C2C;
+	border-bottom-color:#E6CE20;
+}
+.highcontrast #AffilatedSites .resourcesLink h6 a{
+	color:white!important;
+}
+.highcontrast #AffilatedSites .resourcesLink .btn {
+    background-color: #E6CE20;
+	color: black;
+}
+.highcontrast  #AffilatedSites .form-control{
+	border-color:#E6CE20;
+}
+.highcontrast #ada_dropdown label{
+    color: #fff;
+}
+.fontSizeMedium #accessibility .dropdown-header{
+	letter-spacing:1px !important;
+}
+

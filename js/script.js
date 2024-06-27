@@ -24,28 +24,6 @@ window.addEventListener('scroll', function () {
 });
 
 
-
-// let infoPopups = document.querySelectorAll('.info-popup')
-// infoPopups.forEach(popup => {
-//     popup.addEventListener('click', () => {
-//         $('.popover').hide();
-//         $(this).popover('show');
-//     })
-// })
-
-
-// hide popover when screen clicked
-// window.onload = function () {
-//     document.addEventListener("click", function (event) {
-//         // if the clicked element isn't child of the navbar, you must close it if is open
-//         if (!event.target.closest("[data-toggle='popover']")) {
-//             $("[data-toggle='popover']").popover('hide');
-
-//         }
-//     });
-
-// }
-
 // create array of county ids in alphabetical order
 let countyNameArray = []
 for (let i = 0; i < counties.length; i++) {
@@ -66,48 +44,38 @@ countySelect.addEventListener('change', () => {
     data.county = countySelect.value
     updateHighlightedCounty(data.county)
     reset()
-    scrollFunc('#year-container', 300)
-    data.county === 'Alachua' ? $( "#prev-map-arrow" ).addClass( "disabled" ) : $( "#prev-map-arrow" ).removeClass( "disabled" )
+    data.county === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
+    document.querySelector('.bootstrap-select').querySelector('.dropdown-toggle').click()
+    // $( ".dropdown-menu" ).removeClass( "show" )
 
 })
 
 // county map click event listener - image mapster 'html mapped' florida mpa - change county when clicked on the map itself
 document.querySelectorAll('area').forEach(county => {
     county.addEventListener('click', () => {
-
         data.county = county.alt.replace('County', '').trim()
         $("#old-county-info").fadeOut();
         $("#county-select").selectpicker('val', data.county)
         reset()
         data.county = countySelect.value
         updateHighlightedCounty(data.county)
-        scrollFunc('#year-container', 300)
-        data.county === 'Alachua' ? $( "#prev-map-arrow" ).addClass( "disabled" ) : $( "#prev-map-arrow" ).removeClass( "disabled" )
-
+        data.county === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
     })
 })
 
 // county next/prev arrow listener - image mapster 'html mapped' florida map - arrows event listener - change county to next/prev select item
-countySelect.value === 'Alachua' ? $( "#prev-map-arrow" ).addClass( "disabled" ) : $( "#prev-map-arrow" ).removeClass( "disabled" )
+countySelect.value === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
 document.querySelectorAll('.map-arrows').forEach(arrow => {
     arrow.addEventListener('click', () => {
-
-
         arrow.id === 'prev-map-arrow'
             ? countySelect.selectedIndex--
             : countySelect.selectedIndex++
         !countySelect.value && countySelect.selectedIndex++
-
         data.county = countySelect.value
-
-
         $('.selectpicker').selectpicker('refresh')
-
         updateHighlightedCounty(data.county)
-
         reset()
-        countySelect.value === 'Alachua' ? $( "#prev-map-arrow" ).addClass( "disabled" ) : $( "#prev-map-arrow" ).removeClass( "disabled" )
-        scrollFunc('#year-container', 300)
+        countySelect.value === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
     })
 })
 
@@ -183,16 +151,8 @@ document.querySelectorAll('.active-arrows').forEach(arrow => {
 })
 
 // side scroll arrows to ease transitions to diff sections
-document.querySelectorAll('.nav-arrows').forEach(arrow => {
-    arrow.addEventListener('click', () => {
-        if (arrow.id === 'nav-to-county') {
-            scrollFunc('.county-title-container', 300)
-        } if (arrow.id === 'nav-to-map') {
-            scrollFunc('#county-timeline-header', 300)
-        } if (arrow.id === 'nav-to-search') {
-            scrollFunc('#year-container', 300)
-        }
-    })
+document.querySelector('#nav-to-search').addEventListener('click', () => {
+    scrollFunc('.breadcrumb_jumbo ', 300)
 })
 
 

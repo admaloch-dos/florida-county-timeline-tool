@@ -6,7 +6,6 @@ import { openSeaViewerFunc } from "./openSeaMapViewer.js"
 import { changeActiveImg } from "./changeActiveImg.js"
 import { addThumbImages } from "./addThumbImages.js"
 import { testMapCarouselArrow } from "./testMapCarouselArrow.js"
-import { scrollFunc } from "./scroll-func.js"
 import { grabCurrItemYear } from "./testItems.js"
 
 const countyTimeline = document.querySelector('.county-timeline')
@@ -20,7 +19,7 @@ const yearInput = document.querySelector('#year-search')
 // add items to ul timeline... ex. Alachua County Timeline 1783 etc...
 export const addCountyPeriodItems = () => {
     countyTimeline.style.display = 'none'
-    countyTimelineHeader.innerText = `${countySelect.value} county timeline:`
+    countyTimelineHeader.innerText = `${countySelect.value} county:`
     const currCounty = counties.filter(x => x.id === countySelect.value)[0]
 
     countyTimelineList.innerText = ''
@@ -50,7 +49,7 @@ export const addCountyPeriodItems = () => {
                     </i>
                     `
                 const itemContainer = document.createElement('div')
-                itemContainer.classList.add('d-flex', 'justify-content-center')
+                itemContainer.classList.add('d-flex', 'justify-content-center', 'align-items-center')
                 itemContainer.append(countyListItem)
                 itemContainer.append(citationContainer)
 
@@ -104,8 +103,6 @@ const listItemClickHandler = () => {
                     document.querySelector('.active-img').nextElementSibling.classList.add('d-none')
                     changeActiveImg()
                     testMapCarouselArrow()
-
-                    scrollFunc('#openseadragon1', 300)
                 })
             }
         })
@@ -114,7 +111,7 @@ const listItemClickHandler = () => {
         const countySelect = document.querySelector('#county-select')
         const endYear = grabCurrItemYear(countySelect.value)
         list.innerHTML = `
-       <div class="d-flex justify-content-center">
+       <div class="d-flex justify-content-center ">
        <li class="county-list-item" >${countySelect.value} county doesn't exist as of ${endYear}</li>
        </div>
        `

@@ -52,51 +52,44 @@ export const updateHighlightedCounty = (county) => {
     doesCountyExist()
 }
 
-
-// change imagemapster based on screen size
-const testScreenSize = () => {
-    let updatedMapsterSize = 200
-    if (window.innerWidth > 0 && window.innerWidth < 400) {
-        updatedMapsterSize = 275
-    } if (window.innerWidth > 399 && window.innerWidth < 576) {
-        updatedMapsterSize = 300
-    } if (window.innerWidth > 575 && window.innerWidth < 768) {
-        updatedMapsterSize = 450
-    } if (window.innerWidth > 767 && window.innerWidth < 1000) {
-        updatedMapsterSize = 600
-    }if (window.innerWidth > 999 && window.innerWidth < 1200) {
-        updatedMapsterSize = 600
-    } if (window.innerWidth > 1199) {
-        updatedMapsterSize = 800
+const calcMapsterSize = () => {
+    let mapsterSize
+    if (window.innerWidth > 992) {
+        mapsterSize = window.innerWidth / 2;
+    } else {
+         mapsterSize = window.innerWidth / 1.3;
     }
-
-    return updatedMapsterSize
-}
-// on page load
-let mapsterSize = testScreenSize()
-console.log(mapsterSize, 'is mapster size on page load')
-console.log(window.innerWidth)
-$('img').mapster('resize', mapsterSize, null)
-window.onresize = function () {
-    setTimeout(function () {
-        let prevSize = mapsterSize
-        mapsterSize = testScreenSize()
-        // window.location.reload(); //this function will play after 5000 milliseconds
-        if (mapsterSize !== prevSize) {
-            console.log('trigger resize')
-            $('img').mapster('resize', mapsterSize, null)
-            prevSize = mapsterSize
-        }
-        console.log(mapsterSize, 'is mapster size after resize')
-    }, 1000);
+    mapsterSize = Math.max(200, Math.min(650, mapsterSize));
+    return mapsterSize;
 }
 
-setTimeout(()=>{
-    if(window.innerWidth < 500) {
-        console.log('less than 400')
-        $('img').mapster('resize', 275, null)
+$('img').mapster('resize', calcMapsterSize(), null)
+
+
+let timeout = null
+let prevSize = calcMapsterSize()
+window.addEventListener('resize', function (event) {
+    let updatedMapsterSize = calcMapsterSize()
+    clearTimeout(timeout)
+    if (updatedMapsterSize !== prevSize) {
+        timeout = setTimeout(() => {
+            prevSize = updatedMapsterSize
+            $('img').mapster('resize', updatedMapsterSize, null)
+        }, 500);
     }
-},500)
+});
+
+
+
+
+
+
+// setTimeout(()=>{
+//     if(window.innerWidth < 500) {
+//         console.log('less than 400')
+//         $('img').mapster('resize', 275, null)
+//     }
+// },500)
 
 
 
