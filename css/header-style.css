@@ -78,7 +78,7 @@
 	}
 }
 #main_navbar .dropdown-menu.show{
-	margin-top:-1px!important;
+	/* margin-top:-1px!important; */
 }
 @media screen and (min-width: 992px) {
 	#main_navbar .dropdown-menu.show{
@@ -142,11 +142,11 @@
 
 #navContainer .navbar-nav a.nav-link{
 	color:#826e59;
-	font-size:12px;
+	font-size:15px;
 	letter-spacing: 3px;
     text-transform: uppercase;
-	transition:color 0.5s;
-    font-weight: 900;
+	transition:color 0.25s;
+    font-weight: 700;
 
 }
 #navContainer .navbar .navbar-nav .nav-item#share ul.dropdown-menu li.dropdown-submenu a.dropdown-item{
@@ -224,6 +224,7 @@
 }
 
 .dropdown-menu {
+    padding: 0;
     margin: 0;
     border: none;
 }

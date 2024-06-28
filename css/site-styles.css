@@ -1752,9 +1752,36 @@ a:hover {
     font-size: 2rem;
 }
 
+#search-form {
+    max-width: 300px;
+}
+@media screen and (max-width: 992px) {
+#Left_Nav a {
+    display: inline;
+}
+}
+
+
+#Left_Nav li {
+   /* padding: .4rem .5rem; */
+   /* border: black solid 1px; */
+   position: relative;
+top: .05rem;
+}
+
+
+#navContainer .dropdown-submenu a.dropdown-item.dropdown-toggle {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.jumbotron {
+    padding: 3rem 0 1rem 0;
+}
+
 @media screen and (min-width: 576px) {
     .jumbotron {
-        padding: 6.7rem 2rem;
+        padding: 5.7rem 2rem;
     }
 }
 

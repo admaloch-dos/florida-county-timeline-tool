@@ -59,7 +59,7 @@ const calcMapsterSize = () => {
     } else {
          mapsterSize = window.innerWidth / 1.3;
     }
-    mapsterSize = Math.max(200, Math.min(650, mapsterSize));
+    mapsterSize = Math.max(200, Math.min(700, mapsterSize));
     return mapsterSize;
 }
 

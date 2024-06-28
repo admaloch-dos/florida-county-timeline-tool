@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    max-width: 100vw;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -47,7 +47,13 @@ body {
     /* margin-top: 1rem; */
     background-color: #1F4D5F;
     padding: .5rem;
-    border-radius: 5px;
+
+}
+
+@media screen and (min-width:576px) {
+    .county-title-container {
+        border-radius: 5px;
+    }
 }
 
 .map-arrow-text,
@@ -102,8 +108,10 @@ body {
     font-size: .8rem;
 }
 
+.map-info-nav,
 .map-container {
     max-width: 100%;
+    padding: 0 1rem;
 }
 
 #openseadragon1 {
@@ -151,7 +159,7 @@ body {
 }
 
 #county-timeline-list li {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .bootstrap-select {
@@ -257,6 +265,19 @@ ul {
     aspect-ratio: 12/13;
     transition: opacity 350ms ease-in-out;
     background-image: url("https://www.floridamemory.com/FMP/maps/small/fmc0001.jpg");
+}
+
+@media screen and (min-width:1450px) {
+    .thumb-map-img {
+        width: 140px;
+        height: 140px;
+    }
+}
+@media screen and (min-width:1700px) {
+    .thumb-map-img {
+        width: 160px;
+        height: 160px;
+    }
 }
 
 .thumb-map-img:hover {
@@ -413,16 +434,15 @@ ul {
     position: absolute;
     top: 0;
     z-index: 1;
-    right: 0;
+    right: 3.5rem;
 }
 
 
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 1700px) {
 
     .interactive-map {
-        top: 0;
-        right: 1.5rem;
+        right: 6.5rem;
     }
 }
 
@@ -517,7 +537,12 @@ ul {
 
 .map-container-width {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+}
+@media (min-width: 1600px) {
+    .map-container-width {
+        max-width: 700px;
+    }
 }
 
 
@@ -664,7 +689,7 @@ ul {
     }
 
     #county-timeline-list li {
-        line-height: 22px;
+        line-height: 25px;
     }
 
     #old-county-info {
