@@ -24,6 +24,13 @@ window.addEventListener('scroll', function () {
     $("[data-toggle='popover']").popover('hide');
 });
 
+// Toggles icon on navbar in mobile
+$(document).ready(function () {
+    $('#swapBtn').click(function () {
+        $('#swapBtn > i').toggleClass('fa-bars fa-times');
+    });
+});
+
 
 // create array of county ids in alphabetical order
 let countyNameArray = []

@@ -26,18 +26,6 @@
     <link rel="stylesheet" href="/css/header-style.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <script src="files/jquery-3.6.3.min.js"></script>
-
-    <script>
-        // Toggles icon on navbar in mobile
-        $(document).ready(function () {
-            $('#swapBtn').click(function () {
-                $('#swapBtn > i').toggleClass('fa-bars fa-times');
-            });
-        });
-    </script>
-
-
 
 </head>
 
@@ -100,13 +88,16 @@
                 <nav class="navbar navbar-expand-lg" id="main_navbar">
                     <div class="navbar-collapse collapse" id="navbarNavDropdown">
                         <!--------------- MOBILE SEARCH -------------------->
-                        <form class="SearchForm mr-md-auto mr-lg-0 ml-md-0 ml-lg-auto mb-3 d-lg-none" id="search-form" name="search-form" action="https://www.floridamemory.com/find?" method="get" _lpchecked="1">
+                        <form class="SearchForm mr-md-auto mr-lg-0 ml-md-0 ml-lg-auto mb-3 d-lg-none" id="search-form"
+                            name="search-form" action="https://www.floridamemory.com/find?" method="get" _lpchecked="1">
 
                             <div class="input-group input-group-sm mx-auto" id="search-container" role="search">
-                                <input type="text" class="form-control " name="keywords" id="query" value="" title="Search..." placeholder="Search..." size="40">
+                                <input type="text" class="form-control " name="keywords" id="query" value=""
+                                    title="Search..." placeholder="Search..." size="40">
                                 <!--<input type="hidden" name="condition" value="2">-->
                                 <div class="input-group-append">
-                                    <button class="btn" id="submit_search" type="submit" value="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    <button class="btn" id="submit_search" type="submit" value="Search"><i
+                                            class="fa fa-search" aria-hidden="true"></i></button>
                                 </div><!-- input-group-append -->
                             </div><!-- class="input-group" id="search-container" role="search"-->
                         </form>
@@ -1066,24 +1057,6 @@
 
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main><!-- row -->
 
     <aside class="related-content-container d-flex justify-content-center w-100 pt-5 pb-5">
@@ -1455,6 +1428,8 @@
     </footer>
 
     <!-- javascript -->
+    <script src="files/jquery-3.6.3.min.js"></script>
+
     <script src="files/bootstrap.bundle.min.js"></script>
     <script src="files/bootstrap-select-js.min.js"></script>
     <script src="files/jquery.imagemapster.js"></script>
