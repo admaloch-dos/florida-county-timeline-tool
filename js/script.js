@@ -6,9 +6,10 @@ import { updateHighlightedCounty } from "./activate-image-mapster.js"
 import { testMapCarouselArrow } from "../modules/testMapCarouselArrow.js"
 import { addThumbImages } from "../modules/addThumbImages.js"
 import { changeActiveImg } from "../modules/changeActiveImg.js"
-import { reset } from "../modules/reset.js"
+import { resetCurrCounty, updateCurrTimeline } from "../modules/resetCurrCounty.js"
 import { scrollFunc } from "../modules/scroll-func.js"
 import { genYearIndex } from "../modules/genYearIndex.js"
+import { checkIfTouchScreen } from "../modules/utilities.js"
 
 const yearInput = document.querySelector('#year-search')
 const countySelect = document.querySelector('#county-select')
@@ -39,43 +40,57 @@ for (let i = 0; i < countyNameArray.length; i++) {
     countySelect.append(countySelectOption)
 }
 
+// func for updating county from select/prev/nextarrows and map click
+const updateCurrCounty = (county) => {
+    $("#old-county-info").fadeOut();
+    updateHighlightedCounty(county)
+    updateCurrTimeline()
+    scrollFunc('.timeline-content', 400, 100)
+
+    // county === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
+}
+
+setTimeout(() => {
+    if (checkIfTouchScreen()) {
+        document.querySelector('[data-id="county-select"]').addEventListener('click', () => {
+            scrollFunc('#county-select', 400, 100)
+        })
+    }
+}, 300);
+
+
 //county select event listener - search by county select - event listener on change
 countySelect.addEventListener('change', () => {
-    data.county = countySelect.value
-    updateHighlightedCounty(data.county)
-    reset()
-    data.county === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
     document.querySelector('.bootstrap-select').querySelector('.dropdown-toggle').click()
-    // $( ".dropdown-menu" ).removeClass( "show" )
-
+    updateCurrCounty(countySelect.value)
 })
 
-// county map click event listener - image mapster 'html mapped' florida mpa - change county when clicked on the map itself
+// image mapster map county areas
 document.querySelectorAll('area').forEach(county => {
     county.addEventListener('click', () => {
-        data.county = county.alt.replace('County', '').trim()
-        $("#old-county-info").fadeOut();
-        $("#county-select").selectpicker('val', data.county)
-        reset()
-        data.county = countySelect.value
-        updateHighlightedCounty(data.county)
-        data.county === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
+        const currCounty = county.alt.replace('County', '').trim()
+        $("#county-select").selectpicker('val', currCounty)
+        updateCurrCounty(currCounty)
     })
 })
 
-// county next/prev arrow listener - image mapster 'html mapped' florida map - arrows event listener - change county to next/prev select item
-countySelect.value === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
+// prev/next arrows listener
 document.querySelectorAll('.map-arrows').forEach(arrow => {
     arrow.addEventListener('click', () => {
-        arrow.id === 'prev-map-arrow'
-            ? countySelect.selectedIndex--
-            : countySelect.selectedIndex++
+        console.log(countySelect.length)
+        if (arrow.id === 'prev-map-arrow') {
+            countySelect.selectedIndex !== 0
+                ? countySelect.selectedIndex--
+                : countySelect.selectedIndex = countySelect.length - 1
+        } else {
+            countySelect.selectedIndex !== countySelect.length - 1
+                ? countySelect.selectedIndex++
+                : countySelect.selectedIndex = 0
+        }
         !countySelect.value && countySelect.selectedIndex++
-        data.county = countySelect.value
         $('.selectpicker').selectpicker('refresh')
-        updateHighlightedCounty(data.county)
-        reset()
-        countySelect.value === 'Alachua' ? $("#prev-map-arrow").addClass("disabled") : $("#prev-map-arrow").removeClass("disabled")
+        updateCurrCounty(countySelect.value)
+
     })
 })
 
@@ -83,6 +98,7 @@ document.querySelectorAll('.map-arrows').forEach(arrow => {
 //different set timeouts to prevent premature form input
 let timer;
 yearInput.addEventListener('keyup', function (e) {
+    clearTimeout(timer)
     e.preventDefault()
     let currYear = new Date().getFullYear();
     data.year = yearInput.value
@@ -93,25 +109,21 @@ yearInput.addEventListener('keyup', function (e) {
     if (parseYear > currYear || isnum === false && data.year.length > 0) {
         formControl.classList.remove('form-control-success')
         formControl.classList.add('form-control-warning')
+        return
     } else {
         formControl.classList.add('form-control-success')
         formControl.classList.remove('form-control-warning')
     }
-    let timeOutNum = 0
-    if (data.year.length >= 1 && data.year.length <= 3) timeOutNum = 2500
-    else if (data.year.length === 4) timeOutNum = 2000
-    else if (data.year.length === 0) timeOutNum = 300
-    else return
-
-    setTimeout(() => {
+    timer = setTimeout(() => {
         genYearIndex()
         addCountyPeriodItems()
-    }, timeOutNum)
+        scrollFunc('.timeline-content', 400, 100)
+    }, 1000)
 });
 
 // reset button under narrow by year form - reset timeline and map to default
 document.querySelector('#reset-results-btn').addEventListener('click', () => {
-    reset()
+    resetCurrCounty()
 })
 
 // map carousel thumbnail arrows- add next/prev set of maps on next/prev arrow click
@@ -190,5 +202,9 @@ setTimeout(() => {
     addThumbImages(data.yearIndex)
     changeActiveImg()
     testMapCarouselArrow()
+    document.querySelector('.map-1').click()
 }, 100);
 
+setTimeout(() => {
+    document.querySelector('#reset-results-btn').click()
+}, 2000);

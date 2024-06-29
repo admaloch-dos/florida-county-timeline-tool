@@ -1,9 +1,9 @@
 
-export const scrollFunc = (location, time) => {
+export const scrollFunc = (location, time, offset = 0) => {
 
-    setTimeout(() => {
-        $('html, body').animate({ scrollTop: $(location).offset().top }, time);
-    }, 400);
+
+        $('html, body').animate({ scrollTop: $(location).offset().top - offset }, time);
+
 
 
 }

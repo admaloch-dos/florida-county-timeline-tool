@@ -7,6 +7,7 @@ import { changeActiveImg } from "./changeActiveImg.js"
 import { addThumbImages } from "./addThumbImages.js"
 import { testMapCarouselArrow } from "./testMapCarouselArrow.js"
 import { grabCurrItemYear } from "./testItems.js"
+import { scrollFunc } from "./scroll-func.js"
 
 const countyTimeline = document.querySelector('.county-timeline')
 const countyTimelineHeader = document.querySelector('#county-timeline-header')
@@ -103,6 +104,8 @@ const listItemClickHandler = () => {
                     document.querySelector('.active-img').nextElementSibling.classList.add('d-none')
                     changeActiveImg()
                     testMapCarouselArrow()
+                    scrollFunc('.county-timeline', 400, 200)
+
                 })
             }
         })
