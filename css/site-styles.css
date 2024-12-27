@@ -1402,6 +1402,7 @@ blockquote {
 
     #menudropdown .card-body #side-nav li {
         border-bottom: 1px solid gainsboro;
+        text-align: center;
     }
 
     #menudropdown .card-body #side-nav li:last-of-type {
