@@ -9,7 +9,7 @@ export const counties = [
     },
     {
         "id": "Duval",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -18,7 +18,7 @@ export const counties = [
     },
     {
         "id": "Monroe",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -27,7 +27,7 @@ export const counties = [
     },
     {
         "id": "Alachua",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -37,7 +37,7 @@ export const counties = [
     },
     {
         "id": "Mosquito",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -46,7 +46,7 @@ export const counties = [
     },
     {
         "id": "Nassau",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -56,7 +56,7 @@ export const counties = [
     },
     {
         "id": "Columbia",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -66,7 +66,7 @@ export const counties = [
     },
     {
         "id": "Hillsborough",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -76,7 +76,7 @@ export const counties = [
     },
     {
         "id": "Dade",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -87,7 +87,7 @@ export const counties = [
     },
     {
         "id": "Miami-Dade",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -98,7 +98,7 @@ export const counties = [
     },
     {
         "id": "Hernando",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -110,7 +110,7 @@ export const counties = [
     },
     {
         "id": "Benton",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -121,7 +121,7 @@ export const counties = [
     },
     {
         "id": "Marion",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -131,7 +131,7 @@ export const counties = [
     },
     {
         "id": "Saint Lucia",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -141,7 +141,7 @@ export const counties = [
     },
     {
         "id": "Levy",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -152,7 +152,7 @@ export const counties = [
     },
     {
         "id": "Orange",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -162,7 +162,7 @@ export const counties = [
     },
     {
         "id": "Putnam",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -172,7 +172,7 @@ export const counties = [
     },
     {
         "id": "Volusia",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -183,7 +183,7 @@ export const counties = [
     },
     {
         "id": "New River",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -194,7 +194,7 @@ export const counties = [
     },
     {
         "id": "Suwannee",
-        "periods": [["Ancestral Period", "1513-04-02", "",],
+        "periods": [["Ancestral Period", "1513-04-02", "-",],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -205,7 +205,7 @@ export const counties = [
     },
     {
         "id": "Clay",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -215,7 +215,7 @@ export const counties = [
     },
     {
         "id": "Sumter",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -226,7 +226,7 @@ export const counties = [
     },
     {
         "id": "Brevard",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -237,7 +237,7 @@ export const counties = [
     },
     {
         "id": "Manatee",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -248,7 +248,7 @@ export const counties = [
     },
     {
         "id": "Baker",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -260,7 +260,7 @@ export const counties = [
     },
     {
         "id": "Bradford",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -273,7 +273,7 @@ export const counties = [
     },
     {
         "id": "Polk",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -284,7 +284,7 @@ export const counties = [
     },
     {
         "id": "Citrus",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -298,7 +298,7 @@ export const counties = [
     },
     {
         "id": "Pasco",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -312,7 +312,7 @@ export const counties = [
     },
     {
         "id": "Lake",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -324,7 +324,7 @@ export const counties = [
     },
     {
         "id": "DeSoto",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -336,7 +336,7 @@ export const counties = [
     },
     {
         "id": "Lee",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -349,7 +349,7 @@ export const counties = [
 
     {
         "id": "Osceola",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -362,7 +362,7 @@ export const counties = [
     },
     {
         "id": "Saint Lucie",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -374,7 +374,7 @@ export const counties = [
     },
     {
         "id": "Palm Beach",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -389,7 +389,7 @@ export const counties = [
     },
     {
         "id": "Broward",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -405,7 +405,7 @@ export const counties = [
     },
     {
         "id": "Pinellas",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -416,7 +416,7 @@ export const counties = [
     },
     {
         "id": "Seminole",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -427,7 +427,7 @@ export const counties = [
     },
     {
         "id": "Flagler",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -436,7 +436,7 @@ export const counties = [
     },
     {
         "id": "Sarasota",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -448,7 +448,7 @@ export const counties = [
     },
     {
         "id": "Glades",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -461,7 +461,7 @@ export const counties = [
     },
     {
         "id": "Okeechobee",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -474,7 +474,7 @@ export const counties = [
     },
     {
         "id": "Charlotte",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -487,7 +487,7 @@ export const counties = [
     },
     {
         "id": "Hardee",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1821-07-21", "1824-12-29", "Saint Johns", "Laws 1822, page XX, Ordinance of 1821 by Major General Andrew Jackson Creating Saint Johns and Escambia Counties. &quotAll the Country lying East of the river Suwaney, and every part of the ceded territories, not designated as belonging to the former county [Escambia] shall form one county to be called St. Johns.&quot"],
         ["1824-12-29", "1834-01-25", "Alachua", "Laws 1824, &quotAn Act To Establish New Counties and to Define the boundaries of the Counties of the Territory.&quot"],
         ["1834-01-25", "1855-01-09", "Hillsborough", "Laws 1834, Ch. 764, &quotAn Act to Organize a County to be Called Hillsborough, and for Other Purposes.&quot"],
@@ -497,7 +497,7 @@ export const counties = [
     },
     {
         "id": "Highlands",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -510,7 +510,7 @@ export const counties = [
     },
     {
         "id": "Collier",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -523,7 +523,7 @@ export const counties = [
     },
     {
         "id": "Hendry",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -536,7 +536,7 @@ export const counties = [
     },
     {
         "id": "Indian River",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -549,7 +549,7 @@ export const counties = [
     },
     {
         "id": "Martin",
-        "periods": [["Ancestral Period", "1513-04-02", "Jaega Cheifdom",],
+        "periods": [["Ancestral Period", "1513-04-02", "Jaega Cheifdom", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British East Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish East Florida", "1783 Treaty of Versailles, Article V."],
@@ -563,7 +563,7 @@ export const counties = [
     },
     {
         "id": "Escambia",
-        "periods": [["Ancestral Period", "1513-04-02", "Choctaw/Creek cheifdoms",],
+        "periods": [["Ancestral Period", "1513-04-02", "Choctaw/Creek cheifdoms", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -571,7 +571,7 @@ export const counties = [
     },
     {
         "id": "Jackson",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -580,7 +580,7 @@ export const counties = [
     },
     {
         "id": "Gadsden",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -590,7 +590,7 @@ export const counties = [
     },
     {
         "id": "Walton",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -610,7 +610,7 @@ export const counties = [
     },
     {
         "id": "Washington",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -620,7 +620,7 @@ export const counties = [
     },
     {
         "id": "Jefferson",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -632,7 +632,7 @@ export const counties = [
     },
     {
         "id": "Madison",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -644,7 +644,7 @@ export const counties = [
     },
     {
         "id": "Hamilton",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -656,7 +656,7 @@ export const counties = [
     },
     {
         "id": "Franklin",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -667,7 +667,7 @@ export const counties = [
     },
     {
         "id": "Calhoun",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -678,7 +678,7 @@ export const counties = [
     },
     {
         "id": "Santa Rosa",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -687,7 +687,7 @@ export const counties = [
     },
     {
         "id": "Wakulla",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -699,7 +699,7 @@ export const counties = [
     },
     {
         "id": "Holmes",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -710,7 +710,7 @@ export const counties = [
     },
     {
         "id": "Liberty",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -721,7 +721,7 @@ export const counties = [
     },
     {
         "id": "Taylor",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -734,7 +734,7 @@ export const counties = [
     },
     {
         "id": "Lafayette",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -747,7 +747,7 @@ export const counties = [
     },
     {
         "id": "Bay",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V.."],
@@ -758,7 +758,7 @@ export const counties = [
     },
     {
         "id": "Okaloosa",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
@@ -769,7 +769,7 @@ export const counties = [
     },
     {
         "id": "Dixie",
-        "periods": [["Ancestral Period", "1513-04-02",],
+        "periods": [["Ancestral Period", "1513-04-02", "-"],
         ["1513-04-02", "1763-02-10", "La Florida",],
         ["1763-02-10", "1783-09-03", "British West Florida", "1763 Treaty of Paris, Article XX."],
         ["1783-09-03", "1821-07-21", "Spanish West Florida", "1783 Treaty of Versailles, Article V."],
